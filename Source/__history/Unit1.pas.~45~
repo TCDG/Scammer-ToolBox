@@ -60,6 +60,7 @@ type
     btnonetime: TButton;
     btnwarranty: TButton;
     btnsmalltalk: TButton;
+    TabSheet6: TTabSheet;
     procedure btnexportnotepadClick(Sender: TObject);
     procedure btnclearnotepadClick(Sender: TObject);
     procedure btnmsconfigClick(Sender: TObject);

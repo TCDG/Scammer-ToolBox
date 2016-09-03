@@ -575,9 +575,9 @@ object Form1: TForm1
   object Label3: TLabel
     Left = 490
     Top = 482
-    Width = 56
+    Width = 55
     Height = 33
-    Caption = ' / 14'
+    Caption = ' / 19'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWhite
     Font.Height = -27
@@ -619,7 +619,7 @@ object Form1: TForm1
     Width = 898
     Height = 465
     Cursor = crHandPoint
-    ActivePage = TabSheet1
+    ActivePage = TabSheet5
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -4531,15 +4531,15 @@ object Form1: TForm1
         ParentFont = False
       end
       object Label14: TLabel
-        Left = 267
-        Top = 265
-        Width = 357
-        Height = 33
+        Left = 338
+        Top = 409
+        Width = 215
+        Height = 19
         Cursor = crHandPoint
         Caption = 'Submit your YouTube channel'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clAqua
-        Font.Height = -27
+        Font.Height = -16
         Font.Name = 'Tahoma'
         Font.Style = [fsUnderline]
         ParentFont = False

@@ -619,7 +619,7 @@ object Form1: TForm1
     Width = 898
     Height = 465
     Cursor = crHandPoint
-    ActivePage = TabSheet1
+    ActivePage = TabSheet3
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -16

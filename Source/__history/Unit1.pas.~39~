@@ -58,8 +58,6 @@ type
     btnwirusesfound: TButton;
     btnomg: TButton;
     btnonetime: TButton;
-    btnwarranty: TButton;
-    btnsmalltalk: TButton;
     procedure btnexportnotepadClick(Sender: TObject);
     procedure btnclearnotepadClick(Sender: TObject);
     procedure btnmsconfigClick(Sender: TObject);
@@ -82,8 +80,6 @@ type
     procedure btnomgClick(Sender: TObject);
     procedure btnwirusesfoundClick(Sender: TObject);
     procedure btnonetimeClick(Sender: TObject);
-    procedure btnwarrantyClick(Sender: TObject);
-    procedure btnsmalltalkClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -185,20 +181,6 @@ procedure TForm1.Button1Click(Sender: TObject);
 begin
   sfont := edtfontsize.Text;
   rednotepad.Font.Size := strtoint(sfont);
-end;
-
-procedure TForm1.btnsmalltalkClick(Sender: TObject);
-begin
-  btnsmalltalk.Enabled := False;
-  inc(iscore);
-  lblscore.Caption := inttostr(iscore)
-end;
-
-procedure TForm1.btnwarrantyClick(Sender: TObject);
-begin
-  btnwarranty.Enabled := False;
-  inc(iscore);
-  lblscore.Caption := inttostr(iscore)
 end;
 
 procedure TForm1.btnonetimeClick(Sender: TObject);

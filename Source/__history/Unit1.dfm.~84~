@@ -4531,15 +4531,15 @@ object Form1: TForm1
         ParentFont = False
       end
       object Label14: TLabel
-        Left = 267
-        Top = 265
-        Width = 357
-        Height = 33
+        Left = 338
+        Top = 409
+        Width = 215
+        Height = 19
         Cursor = crHandPoint
         Caption = 'Submit your YouTube channel'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clAqua
-        Font.Height = -27
+        Font.Height = -16
         Font.Name = 'Tahoma'
         Font.Style = [fsUnderline]
         ParentFont = False

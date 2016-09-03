@@ -575,9 +575,9 @@ object Form1: TForm1
   object Label3: TLabel
     Left = 490
     Top = 482
-    Width = 56
+    Width = 55
     Height = 33
-    Caption = ' / 14'
+    Caption = ' / 19'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWhite
     Font.Height = -27
@@ -4042,7 +4042,6 @@ object Form1: TForm1
         Top = 143
         Width = 313
         Height = 48
-        Cursor = crHandPoint
         Caption = '5/3/Other Year Warranty'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -4052,22 +4051,6 @@ object Form1: TForm1
         ParentFont = False
         TabOrder = 12
         OnClick = btnwarrantyClick
-      end
-      object btnsmalltalk: TButton
-        Left = 632
-        Top = 143
-        Width = 255
-        Height = 48
-        Cursor = crHandPoint
-        Caption = 'Making Small Talk'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -27
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 13
-        OnClick = btnsmalltalkClick
       end
     end
     object TabSheet2: TTabSheet
@@ -4531,15 +4514,15 @@ object Form1: TForm1
         ParentFont = False
       end
       object Label14: TLabel
-        Left = 267
-        Top = 265
-        Width = 357
-        Height = 33
+        Left = 338
+        Top = 409
+        Width = 215
+        Height = 19
         Cursor = crHandPoint
         Caption = 'Submit your YouTube channel'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clAqua
-        Font.Height = -27
+        Font.Height = -16
         Font.Name = 'Tahoma'
         Font.Style = [fsUnderline]
         ParentFont = False
