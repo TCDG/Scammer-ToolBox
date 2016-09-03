@@ -3,7 +3,7 @@ Scammer ToolBox Provides alot of features and more are added after every update!
 
 ##Changelog
 - Added YouTubers.
--Added Submit Your YouTuber Channel
+- Added Submit Your YouTuber Channel
 - Added Notepad Font size changer.
 
 
