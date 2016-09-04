@@ -5,11 +5,14 @@ Scammer ToolBox Provides alot of features and more are added after every update!
 - Added YouTubers.
 - Added Submit Your YouTuber Channel
 - Added Notepad Font size changer.
+- Fixed Version not displaying Correctly
 
 
 ##ToDo List
+- Add Updater
 - Add Scammer List
 - Add Scammer Programs
+- Add Report Scammers
 
 ##Preview 
 Please note that the picture might not be updated to the current version!

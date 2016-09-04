@@ -60,6 +60,8 @@ type
     btnonetime: TButton;
     btnwarranty: TButton;
     btnsmalltalk: TButton;
+    Image8: TImage;
+    ScamRekt: TLabel;
     procedure btnexportnotepadClick(Sender: TObject);
     procedure btnclearnotepadClick(Sender: TObject);
     procedure btnmsconfigClick(Sender: TObject);
@@ -84,11 +86,12 @@ type
     procedure btnonetimeClick(Sender: TObject);
     procedure btnwarrantyClick(Sender: TObject);
     procedure btnsmalltalkClick(Sender: TObject);
+    procedure Image8Click(Sender: TObject);
   private
     { Private declarations }
   public
     iscore : Integer;
-    sgithub, sfont, sinforcer25, ssubmitchannel, soscarblue, slewis, ssph, smrdelphi : String;
+    sgithub, sfont, sinforcer25, ssubmitchannel, soscarblue, slewis, ssph, smrdelphi, sscamrekt : String;
   end;
 
 var
@@ -236,6 +239,12 @@ procedure TForm1.Image7Click(Sender: TObject);
 begin
   smrdelphi := 'https://www.youtube.com/user/mnprg';
   ShellExecute(Application.Handle, PChar('open'), PChar(smrdelphi), nil, nil, SW_SHOW);
+end;
+
+procedure TForm1.Image8Click(Sender: TObject);
+begin
+  sscamrekt := 'https://www.youtube.com/channel/UC6r6QkWG-WNzYyyiTkWRsBg';
+  ShellExecute(Application.Handle, PChar('open'), PChar(sscamrekt), nil, nil, SW_SHOW);
 end;
 
 procedure TForm1.Label14Click(Sender: TObject);
