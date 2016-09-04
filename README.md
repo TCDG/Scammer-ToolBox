@@ -9,7 +9,7 @@ Scammer ToolBox Provides alot of features and more are added after every update!
 
 
 ##ToDo List
-- Add Updater
+- Add Updater (May take some time)
 - Add Scammer List
 - Add Scammer Programs
 - Add Report Scammers
