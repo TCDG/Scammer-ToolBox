@@ -7,23 +7,22 @@ Scammer ToolBox Provides alot of features and more are added after every update!
 
 
 ##ToDo List
-<<<<<<< HEAD
-- Add Updater
-=======
 - Add Updater (May take some time)
-- Add Scammer List
->>>>>>> origin/master
 - Add Scammer Programs
 
 ##Preview 
 Please note that the picture might not be updated to the current version!
 
-![Alt text](http://i.imgur.com/wgWNNEb.png "Screenshot")
+![Alt text](http://i.imgur.com/wgWNNEb.png "Scammer Bingo")
 
-![Alt text](http://i.imgur.com/9DFaw0B.png "Screenshot")
+![Alt text](http://i.imgur.com/LIJXYD7.png "Notepad")
 
-![Alt text](http://i.imgur.com/Mfxb8fv.png "Screenshot")
+![Alt text](http://i.imgur.com/YisMDyq.png "YouTubers")
 
-![Alt text](http://i.imgur.com/RBJ9zMi.png "Screenshot")
+![Alt text](http://i.imgur.com/BZQmiBT.png "Scammer Programs")
 
-![Alt text](http://i.imgur.com/DZMR1mE.png "Screenshot")
+![Alt text](http://i.imgur.com/hRmMB9F.png "Report Scammer")
+
+![Alt text](http://i.imgur.com/s92g3Q6.png "Scammer Numbers")
+
+![Alt text](http://i.imgur.com/DvXaxm3.png "About")
