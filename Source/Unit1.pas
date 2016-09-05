@@ -4,7 +4,8 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ComCtrls, StdCtrls, ExtCtrls, ExtDlgs, ShellAPI, ActnList, jpeg;
+  Dialogs, ComCtrls, StdCtrls, ExtCtrls, ExtDlgs, ShellAPI, ActnList, jpeg,
+  OleCtrls, SHDocVw;
 
 type
   TForm1 = class(TForm)
@@ -62,6 +63,14 @@ type
     btnsmalltalk: TButton;
     Image8: TImage;
     ScamRekt: TLabel;
+    TabSheet6: TTabSheet;
+    Label18: TLabel;
+    TabSheet7: TTabSheet;
+    webscammernumbers: TWebBrowser;
+    Button2: TButton;
+    webreportscammer: TWebBrowser;
+    btnrefresh: TButton;
+    Label19: TLabel;
     procedure btnexportnotepadClick(Sender: TObject);
     procedure btnclearnotepadClick(Sender: TObject);
     procedure btnmsconfigClick(Sender: TObject);
@@ -87,6 +96,10 @@ type
     procedure btnwarrantyClick(Sender: TObject);
     procedure btnsmalltalkClick(Sender: TObject);
     procedure Image8Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure btnrefreshClick(Sender: TObject);
+    procedure btnreportbackClick(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -190,6 +203,16 @@ begin
   rednotepad.Font.Size := strtoint(sfont);
 end;
 
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  webscammernumbers.Navigate('http://154.127.60.211/scammer-numbers.html');
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+begin
+  webreportscammer.GoForward
+end;
+
 procedure TForm1.btnsmalltalkClick(Sender: TObject);
 begin
   btnsmalltalk.Enabled := False;
@@ -209,6 +232,16 @@ begin
   btnonetime.Enabled := False;
   inc(iscore);
   lblscore.Caption := inttostr(iscore)
+end;
+
+procedure TForm1.btnrefreshClick(Sender: TObject);
+begin
+   webreportscammer.Navigate('http://154.127.60.211/report-scammers.html');
+end;
+
+procedure TForm1.btnreportbackClick(Sender: TObject);
+begin
+  webreportscammer.GoBack
 end;
 
 procedure TForm1.Image3Click(Sender: TObject);

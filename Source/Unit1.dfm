@@ -617,12 +617,12 @@ object Form1: TForm1
     Left = 8
     Top = 8
     Width = 898
-    Height = 468
+    Height = 473
     Cursor = crHandPoint
     ActivePage = TabSheet1
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -16
+    Font.Height = -17
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
@@ -4071,10 +4071,14 @@ object Form1: TForm1
     object TabSheet2: TTabSheet
       Caption = 'Notepad'
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 429
       object lblnotepadexport: TLabel
         Left = 3
         Top = 409
-        Width = 286
+        Width = 5
         Height = 19
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWhite
@@ -4170,6 +4174,10 @@ object Form1: TForm1
     object TabSheet3: TTabSheet
       Caption = 'YouTubers'
       ImageIndex = 2
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 429
       object Label10: TLabel
         Left = 179
         Top = 3
@@ -5141,18 +5149,121 @@ object Form1: TForm1
     object TabSheet4: TTabSheet
       Caption = 'Scammer Programs'
       ImageIndex = 3
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 429
       object Label5: TLabel
-        Left = 203
-        Top = 177
-        Width = 485
+        Left = 92
+        Top = 176
+        Width = 706
         Height = 77
-        Caption = 'Coming Soon!  '
+        Caption = 'Coming Next Update! '
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWhite
         Font.Height = -64
         Font.Name = 'Tahoma'
         Font.Style = [fsBold, fsItalic]
         ParentFont = False
+      end
+    end
+    object TabSheet6: TTabSheet
+      Caption = 'Report Scammer(s)'
+      ImageIndex = 5
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 429
+      object Label18: TLabel
+        Left = 19
+        Top = 3
+        Width = 673
+        Height = 33
+        Caption = 'Links where you can report scammers are added weekly!'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -27
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+      end
+      object webreportscammer: TWebBrowser
+        Left = 19
+        Top = 42
+        Width = 729
+        Height = 367
+        TabOrder = 0
+        ControlData = {
+          4C000000584B0000EE2500000000000000000000000000000000000000000000
+          000000004C000000000000000000000001000000E0D057007335CF11AE690800
+          2B2E126208000000000000004C0000000114020000000000C000000000000046
+          8000000000000000000000000000000000000000000000000000000000000000
+          00000000000000000100000000000000000000000000000000000000}
+      end
+      object btnrefresh: TButton
+        Left = 769
+        Top = 201
+        Width = 89
+        Height = 41
+        Caption = 'Refresh'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+        OnClick = btnrefreshClick
+      end
+    end
+    object TabSheet7: TTabSheet
+      Caption = 'Scammer Numbers'
+      ImageIndex = 6
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 429
+      object Label19: TLabel
+        Left = 168
+        Top = 15
+        Width = 389
+        Height = 35
+        Caption = 'New numbers are added daily!'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -29
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+      end
+      object webscammernumbers: TWebBrowser
+        Left = 16
+        Top = 56
+        Width = 729
+        Height = 361
+        TabOrder = 0
+        ControlData = {
+          4C000000584B00004F2500000000000000000000000000000000000000000000
+          000000004C000000000000000000000001000000E0D057007335CF11AE690800
+          2B2E126208000000000000004C0000000114020000000000C000000000000046
+          8000000000000000000000000000000000000000000000000000000000000000
+          00000000000000000100000000000000000000000000000000000000}
+      end
+      object Button2: TButton
+        Left = 769
+        Top = 195
+        Width = 97
+        Height = 41
+        Cursor = crHandPoint
+        Caption = 'Refresh'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Button2Click
       end
     end
     object TabSheet5: TTabSheet
@@ -5180,7 +5291,7 @@ object Form1: TForm1
         Top = 415
         Width = 115
         Height = 19
-        Caption = 'Version: 1.0.0.5'
+        Caption = 'Version: 1.0.0.7'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWhite
         Font.Height = -16
