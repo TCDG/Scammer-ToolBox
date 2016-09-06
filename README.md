@@ -1,4 +1,4 @@
-#Scammer Bingo Plus
+#Scammer ToolBox
 Scammer ToolBox Provides alot of features and more are added after every update!
 
 ##Changelog
