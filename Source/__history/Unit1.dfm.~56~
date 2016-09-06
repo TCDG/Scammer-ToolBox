@@ -619,7 +619,7 @@ object Form1: TForm1
     Width = 898
     Height = 520
     Cursor = crHandPoint
-    ActivePage = TabSheet1
+    ActivePage = TabSheet7
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -17
@@ -4089,7 +4089,6 @@ object Form1: TForm1
         Top = 367
         Width = 92
         Height = 42
-        Cursor = crHandPoint
         Caption = 'Reset'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -5499,7 +5498,7 @@ object Form1: TForm1
         Top = 459
         Width = 115
         Height = 19
-        Caption = 'Version: 1.0.0.9'
+        Caption = 'Version: 1.0.0.8'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWhite
         Font.Height = -16

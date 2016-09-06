@@ -5499,7 +5499,7 @@ object Form1: TForm1
         Top = 459
         Width = 115
         Height = 19
-        Caption = 'Version: 1.0.0.9'
+        Caption = 'Version: 1.0.0.8'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWhite
         Font.Height = -16

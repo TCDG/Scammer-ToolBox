@@ -619,7 +619,7 @@ object Form1: TForm1
     Width = 898
     Height = 520
     Cursor = crHandPoint
-    ActivePage = TabSheet1
+    ActivePage = TabSheet7
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -17
@@ -633,7 +633,7 @@ object Form1: TForm1
       ExplicitHeight = 434
       object Label2: TLabel
         Left = 265
-        Top = 433
+        Top = 393
         Width = 360
         Height = 19
         Caption = 'More buttons are being added so please stay tuned'
@@ -645,8 +645,8 @@ object Form1: TForm1
         ParentFont = False
       end
       object Image1: TImage
-        Left = 3
-        Top = 351
+        Left = 19
+        Top = 311
         Width = 206
         Height = 117
         Picture.Data = {
@@ -2245,8 +2245,8 @@ object Form1: TForm1
         Stretch = True
       end
       object Image2: TImage
-        Left = 684
-        Top = 351
+        Left = 659
+        Top = 311
         Width = 206
         Height = 117
         Picture.Data = {
@@ -4086,10 +4086,9 @@ object Form1: TForm1
       end
       object btnreset: TButton
         Left = 399
-        Top = 367
+        Top = 327
         Width = 92
         Height = 42
-        Cursor = crHandPoint
         Caption = 'Reset'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -4119,7 +4118,7 @@ object Form1: TForm1
       end
       object Label12: TLabel
         Left = 3
-        Top = 434
+        Top = 381
         Width = 70
         Height = 19
         Caption = 'Font Size:'
@@ -4146,7 +4145,7 @@ object Form1: TForm1
       end
       object btnexportnotepad: TButton
         Left = 592
-        Top = 421
+        Top = 381
         Width = 295
         Height = 50
         Cursor = crHandPoint
@@ -4162,7 +4161,7 @@ object Form1: TForm1
       end
       object btnclearnotepad: TButton
         Left = 416
-        Top = 421
+        Top = 381
         Width = 170
         Height = 50
         Cursor = crHandPoint
@@ -4178,7 +4177,7 @@ object Form1: TForm1
       end
       object edtfontsize: TEdit
         Left = 79
-        Top = 429
+        Top = 381
         Width = 26
         Height = 27
         Font.Charset = DEFAULT_CHARSET
@@ -4192,7 +4191,7 @@ object Form1: TForm1
       end
       object Button1: TButton
         Left = 111
-        Top = 429
+        Top = 381
         Width = 33
         Height = 28
         Cursor = crHandPoint
@@ -4204,8 +4203,7 @@ object Form1: TForm1
     object TabSheet3: TTabSheet
       Caption = 'YouTubers'
       ImageIndex = 2
-      ExplicitLeft = 0
-      ExplicitTop = 39
+      ExplicitHeight = 434
       object Label10: TLabel
         Left = 179
         Top = 3
@@ -4564,7 +4562,7 @@ object Form1: TForm1
       end
       object Label14: TLabel
         Left = 267
-        Top = 433
+        Top = 265
         Width = 357
         Height = 33
         Cursor = crHandPoint
@@ -5173,85 +5171,6 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
       end
-      object Label21: TLabel
-        Left = 56
-        Top = 208
-        Width = 195
-        Height = 25
-        Caption = 'Each And Everything'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
-        Font.Height = -21
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-      end
-      object Image9: TImage
-        Left = 96
-        Top = 256
-        Width = 105
-        Height = 105
-        Cursor = crHandPoint
-        Picture.Data = {
-          0A544A504547496D616765E0060000FFD8FFE000104A46494600010100000100
-          010000FFDB008400030202080808080808080708080808090A08080908080807
-          080807070608060808070708080708080708080808160808080809090908080B
-          0C0A080E08081508010304040605060806060A0F0A090A0D0D0D10090A0D0A08
-          0A0A0D080A08080F0D0A0D0E080A0A0D0D0F0A0D0D080A0F0A100A0A0A100F0A
-          0A0D0D0D08100D0808FFC00011080064006403011100021101031101FFC4001B
-          00010002030101000000000000000000000006070103040508FFC40038100001
-          0302030505060309000000000000010002110312040621052231415107133261
-          7114538193D3F11652D21517233562647291C1FFC4001A010100020301000000
-          000000000000000000050601030402FFC4003111000102040209030402030000
-          000000000001020304112131611213517191A1B1D1F03241E1142281C162D205
-          3334FFDA000C03010002110311003F00FAED548A384010040100401004010040
-          1004010040100401004010040100401004010040100401004010040100401004
-          01004010040100404972B642AD8ADE114E97BC7099EB63742E8EB21BC7590575
-          C196745BE09B7B1DB0251F1AF8376AFEB6F42C0C1F65B84A626A5F53AB9EF2D1
-          FEA99608F527D4A936C9C26A5EFBD69D284C36420B53EEBEF5A74A1B7F08ECDF
-          CB47E73BEA2F5A881B138FC9EBE9A5B62715EE3F08ECDFCB47E73BEA26A206C4
-          E3F23E9A5B62715EE54D98F0F4995EAB689BA9076E1991102E01DCC35D2D9932
-          003265424546A3D519815E8C8D47B91976FB7BF97B13EC9991B075B0ECA8F9A8
-          F74DFF00C4736D324596B488811C649E3C085252F2F09EC472DD77D284BCACAC
-          1890D1CEBAEF54A6589E5F68D9570D8765375125AF73A0B2F2E96DAE25FBC4B8
-          5A401C6379699A830E1A22B71D989A2765E1C246AB2CAAB856B6DBFA208A3889
-          0802008020255D9FE51F69A85CF07B9A717F2BDC7C2C07A7331A81034B84764A
-          C0D63AABE94E79773BE4E5F5CEAAFA531CF2EE4E73B67A6E140A34434D5B4691
-          B949B1BB2D1A5D1C19A00209D203A466265217DADC79279EDE565A6A6D20FD8C
-          F5726F9EC9E2D4BB4769D4ACEBAABDD50F57198F41C1A3C9A0050AE7B9EB572D
-          4AEBDEE7AD5CB5DE72C2D6781080CAC8305AB0000B20CA008020080202ECCB8C
-          6E13678791A8A46ABB9173DEDB834F9F859F00AC10A90A0D72AF1BFC16880890
-          25D1D9697E56FF0005318AC539EE73DE65CE24B8F524C9FB72500AAAE5555C54
-          ACB9CAE5555C54D4B07908020080200802008020080C3960176678FE5CFB7859
-          4A3D3BCA5FF158663FD0B4D89D50B3CDFF00CEB4D89D5A54B9729D235E90AE62
-          9176F9981C0DB247069740274869264284848D57A69E057A0A315ED47FA7DFCD
-          F896C7ECAD97FD9FCC67EB535A12FF00C78A772C3AB95FE3C53B912ED1305826
-          D361C39A5DE5FA8A6E0E165AE92E009021D6EBA13AF1D638A69B091134295CAF
-          623A71B011A9ABA56BED7B666AECEF0782736A7B49A7DE070B4547DADB206AD9
-          201374CF12006F09D7CCAB612A2EB295CED63CC9360AA3B594AE6B4B65F922FB
-          7994856AA2899A41E6C324E9E44EA40320133220C95C713451EBA381C1151A8F
-          7687A6B6F3A1C0B59A8200802008020080BB32DBDB8BD9E184EA691A4EE65AE6
-          36D0E3E7E17FC42B042548B06995385BE4B440548F2FA3968FE52DF25318BC2B
-          98E731E21CC24387420C1FBF31AA80722B55517142B2E6AB555AB8A1A960F210
-          040100401004010040100404A720E6EF65A843E7B9A917F3B48F0BC0F2E040D4
-          8EA5A27B25A3EA9D45F4AF2CFB9DF2933A97517D2B8E59F72799D7233716056A
-          25A2ADA20CEE556C6EC913AC7078991A1D2DB64A625D22A69371E4BE7B794969
-          A9548C9A6CF572727982FEB0A93696CAA945D6D563A99FEA100FF8BBC2E1E6D2
-          42847B1CC5A3928579F0DD0D68F4A6FF0029C0E40578358B9600B90C5402B264
-          CA008020080200802024795F3DD6C2EE88A94BDDB8E8275363B52C27D0B789B6
-          4AEA8332E856C536763B65E6DF06C976EC5FD6CE858382ED5308F1152FA7D439
-          85E3E069DF23D40F4528D9C86EC6DBD2BD2A4C37FC842727DD54DE95E953C2CF
-          998F0356816D2B5D56E6D85B4DCC2D8702F25CE6B742D96C6B248D34D39A662C
-          27328DBAEEA5391C9371E03E1D19776494A724F6B1DD9573B6069E1E931C4537
-          B5A03C774F74BC0DF7DCC6381BCEF719D792D906620B5888B65DCBD8DB2F3501
-          B0DAD5B2A25ECAB7DB645DE7ADFBC3D9FEF07C9ABF4D6FFAA83B792F63A7EB25
-          F6F277F5211DA3661C357EEFB812E6CDCFB0B34310DDE0D73B5D751039788A8F
-          9B8B0DF4D0E381153B1A144D1D0C53DE94FC60842D4791810040100401004010
-          0401004010040100401004010040100401004010040100401004010040100401
-          0040100401004010040100407FFFD9}
-        Stretch = True
-        OnClick = Image9Click
-      end
     end
     object TabSheet4: TTabSheet
       Caption = 'Scammer Programs'
@@ -5292,10 +5211,10 @@ object Form1: TForm1
         Left = 19
         Top = 42
         Width = 729
-        Height = 423
+        Height = 367
         TabOrder = 0
         ControlData = {
-          4C000000584B0000B82B00000000000000000000000000000000000000000000
+          4C000000584B0000EE2500000000000000000000000000000000000000000000
           000000004C000000000000000000000001000000E0D057007335CF11AE690800
           2B2E126208000000000000004C0000000114020000000000C000000000000046
           8000000000000000000000000000000000000000000000000000000000000000
@@ -5381,7 +5300,6 @@ object Form1: TForm1
         Top = 378
         Width = 97
         Height = 41
-        Cursor = crHandPoint
         Caption = 'Back'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -5397,7 +5315,6 @@ object Form1: TForm1
         Top = 63
         Width = 97
         Height = 41
-        Cursor = crHandPoint
         Caption = 'Default'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -5413,7 +5330,6 @@ object Form1: TForm1
         Top = 110
         Width = 97
         Height = 41
-        Cursor = crHandPoint
         Caption = 'SBH'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -5445,7 +5361,6 @@ object Form1: TForm1
         Top = 331
         Width = 97
         Height = 41
-        Cursor = crHandPoint
         Caption = 'Fake ID'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -5456,12 +5371,11 @@ object Form1: TForm1
         TabOrder = 7
         OnClick = Button4Click
       end
-      object btnmalbytes: TButton
+      object Button6: TButton
         Left = 769
         Top = 157
         Width = 97
         Height = 41
-        Cursor = crHandPoint
         Caption = 'Malbytes'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -5470,7 +5384,7 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
         TabOrder = 8
-        OnClick = btnmalbytesClick
+        OnClick = Button6Click
       end
     end
     object TabSheet5: TTabSheet
@@ -5495,11 +5409,11 @@ object Form1: TForm1
         WordWrap = True
       end
       object Label8: TLabel
-        Left = 772
-        Top = 459
+        Left = 769
+        Top = 415
         Width = 115
         Height = 19
-        Caption = 'Version: 1.0.0.9'
+        Caption = 'Version: 1.0.0.8'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWhite
         Font.Height = -16
@@ -5524,7 +5438,7 @@ object Form1: TForm1
         Left = 3
         Top = 78
         Width = 884
-        Height = 375
+        Height = 331
         Color = cl3DDkShadow
         Font.Charset = ANSI_CHARSET
         Font.Color = clWhite

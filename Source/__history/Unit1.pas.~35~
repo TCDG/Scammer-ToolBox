@@ -80,9 +80,7 @@ type
     btnlevel: TButton;
     btnreset: TButton;
     Button4: TButton;
-    btnmalbytes: TButton;
-    Label21: TLabel;
-    Image9: TImage;
+    Button6: TButton;
     procedure btnexportnotepadClick(Sender: TObject);
     procedure btnclearnotepadClick(Sender: TObject);
     procedure btnmsconfigClick(Sender: TObject);
@@ -118,8 +116,7 @@ type
     procedure btnlevelClick(Sender: TObject);
     procedure btnresetClick(Sender: TObject);
     procedure Button4Click(Sender: TObject);
-    procedure btnmalbytesClick(Sender: TObject);
-    procedure Image9Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -150,7 +147,6 @@ procedure TForm1.btndefaultClick(Sender: TObject);
 begin
   btndefault.Enabled := False;
   btnsbh.Enabled := True;
-  btnmalbytes.Enabled := True;
   webscammernumbers.Navigate('http://154.127.60.211/scammer-numbers.html');
 end;
 
@@ -263,11 +259,8 @@ begin
   webscammernumbers.Navigate(edtcustomserver.Text);
 end;
 
-procedure TForm1.btnmalbytesClick(Sender: TObject);
+procedure TForm1.Button6Click(Sender: TObject);
 begin
-  btnmalbytes.Enabled := False;
-  btndefault.Enabled := True;
-  btnsbh.Enabled := True;
   webscammernumbers.Navigate('https://www.evernote.com/shard/s558/sh/4b504417-922f-46a9-9a71-f8abfdfd0d73/e4ef969d2afd72afee535ebbbab33851');
 end;
 
@@ -275,7 +268,6 @@ procedure TForm1.btnsbhClick(Sender: TObject);
 begin
   btnsbh.Enabled := False;
   btndefault.Enabled := True;
-  btnmalbytes.Enabled := True;
   webscammernumbers.Navigate('http://www.scambaithub.tk/scammer-numbers');
 end;
 
@@ -365,14 +357,6 @@ procedure TForm1.Image8Click(Sender: TObject);
 begin
   sscamrekt := 'https://www.youtube.com/channel/UC6r6QkWG-WNzYyyiTkWRsBg';
   ShellExecute(Application.Handle, PChar('open'), PChar(sscamrekt), nil, nil, SW_SHOW);
-end;
-
-procedure TForm1.Image9Click(Sender: TObject);
-var
-seachandeverything : String;
-begin
-  seachandeverything := 'https://www.youtube.com/channel/UCQrAHGpBz3PqBV4-_9PdDcA';
-  ShellExecute(Application.Handle, PChar('open'), PChar(seachandeverything), nil, nil, SW_SHOW);
 end;
 
 procedure TForm1.Label14Click(Sender: TObject);

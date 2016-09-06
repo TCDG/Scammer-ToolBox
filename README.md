@@ -2,28 +2,30 @@
 Scammer ToolBox Provides alot of features and more are added after every update!
 
 ##Changelog
-- Added Report Scammers
-- Added Scammer Numbers
+- Added Fake ID (In Scammer Numbers Tab).
+- Added Scammer Numbers server list.
+- Added MalwareBytes Number List (Scammer Numbers).
+- Added ScamBait Hub Number List (Scammer Numbers).
+- Added Each&Everything to the YouTubers list.
 
 
 ##ToDo List
-<<<<<<< HEAD
-- Add Updater
-=======
 - Add Updater (May take some time)
-- Add Scammer List
->>>>>>> origin/master
 - Add Scammer Programs
 
 ##Preview 
 Please note that the picture might not be updated to the current version!
 
-![Alt text](http://i.imgur.com/wgWNNEb.png "Screenshot")
+![Alt text](http://i.imgur.com/DJsy68p.png "Scammer Bingo")
 
-![Alt text](http://i.imgur.com/9DFaw0B.png "Screenshot")
+![Alt text](http://i.imgur.com/LIJXYD7.png "Notepad")
 
-![Alt text](http://i.imgur.com/Mfxb8fv.png "Screenshot")
+![Alt text](http://i.imgur.com/VRdJFrt.png "YouTubers")
 
-![Alt text](http://i.imgur.com/RBJ9zMi.png "Screenshot")
+![Alt text](http://i.imgur.com/BZQmiBT.png "Scammer Programs")
 
-![Alt text](http://i.imgur.com/DZMR1mE.png "Screenshot")
+![Alt text](http://i.imgur.com/hRmMB9F.png "Report Scammer")
+
+![Alt text](http://i.imgur.com/Mfs3GBT.png "Scammer Numbers")
+
+![Alt text](http://i.imgur.com/bp0DDuH.png "About")

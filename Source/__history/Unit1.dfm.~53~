@@ -619,7 +619,7 @@ object Form1: TForm1
     Width = 898
     Height = 520
     Cursor = crHandPoint
-    ActivePage = TabSheet1
+    ActivePage = TabSheet3
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -17
@@ -633,7 +633,7 @@ object Form1: TForm1
       ExplicitHeight = 434
       object Label2: TLabel
         Left = 265
-        Top = 433
+        Top = 393
         Width = 360
         Height = 19
         Caption = 'More buttons are being added so please stay tuned'
@@ -645,8 +645,8 @@ object Form1: TForm1
         ParentFont = False
       end
       object Image1: TImage
-        Left = 3
-        Top = 351
+        Left = 19
+        Top = 311
         Width = 206
         Height = 117
         Picture.Data = {
@@ -2245,8 +2245,8 @@ object Form1: TForm1
         Stretch = True
       end
       object Image2: TImage
-        Left = 684
-        Top = 351
+        Left = 659
+        Top = 311
         Width = 206
         Height = 117
         Picture.Data = {
@@ -4086,10 +4086,9 @@ object Form1: TForm1
       end
       object btnreset: TButton
         Left = 399
-        Top = 367
+        Top = 327
         Width = 92
         Height = 42
-        Cursor = crHandPoint
         Caption = 'Reset'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -4119,7 +4118,7 @@ object Form1: TForm1
       end
       object Label12: TLabel
         Left = 3
-        Top = 434
+        Top = 381
         Width = 70
         Height = 19
         Caption = 'Font Size:'
@@ -4146,7 +4145,7 @@ object Form1: TForm1
       end
       object btnexportnotepad: TButton
         Left = 592
-        Top = 421
+        Top = 381
         Width = 295
         Height = 50
         Cursor = crHandPoint
@@ -4162,7 +4161,7 @@ object Form1: TForm1
       end
       object btnclearnotepad: TButton
         Left = 416
-        Top = 421
+        Top = 381
         Width = 170
         Height = 50
         Cursor = crHandPoint
@@ -4178,7 +4177,7 @@ object Form1: TForm1
       end
       object edtfontsize: TEdit
         Left = 79
-        Top = 429
+        Top = 381
         Width = 26
         Height = 27
         Font.Charset = DEFAULT_CHARSET
@@ -4192,7 +4191,7 @@ object Form1: TForm1
       end
       object Button1: TButton
         Left = 111
-        Top = 429
+        Top = 381
         Width = 33
         Height = 28
         Cursor = crHandPoint
@@ -5381,7 +5380,6 @@ object Form1: TForm1
         Top = 378
         Width = 97
         Height = 41
-        Cursor = crHandPoint
         Caption = 'Back'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -5397,7 +5395,6 @@ object Form1: TForm1
         Top = 63
         Width = 97
         Height = 41
-        Cursor = crHandPoint
         Caption = 'Default'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -5413,7 +5410,6 @@ object Form1: TForm1
         Top = 110
         Width = 97
         Height = 41
-        Cursor = crHandPoint
         Caption = 'SBH'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -5445,7 +5441,6 @@ object Form1: TForm1
         Top = 331
         Width = 97
         Height = 41
-        Cursor = crHandPoint
         Caption = 'Fake ID'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -5456,12 +5451,11 @@ object Form1: TForm1
         TabOrder = 7
         OnClick = Button4Click
       end
-      object btnmalbytes: TButton
+      object Button6: TButton
         Left = 769
         Top = 157
         Width = 97
         Height = 41
-        Cursor = crHandPoint
         Caption = 'Malbytes'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -5470,7 +5464,7 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
         TabOrder = 8
-        OnClick = btnmalbytesClick
+        OnClick = Button6Click
       end
     end
     object TabSheet5: TTabSheet
@@ -5499,7 +5493,7 @@ object Form1: TForm1
         Top = 459
         Width = 115
         Height = 19
-        Caption = 'Version: 1.0.0.9'
+        Caption = 'Version: 1.0.0.8'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWhite
         Font.Height = -16
