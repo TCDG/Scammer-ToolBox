@@ -20,11 +20,7 @@ Please note that the picture might not be updated to the current version!
 
 ![Alt text](http://i.imgur.com/LIJXYD7.png "Notepad")
 
-<<<<<<< HEAD
 ![Alt text](http://i.imgur.com/VRdJFrt.png "YouTubers")
-=======
-![Alt text](http://i.imgur.com/YisMDyq.png "YouTubers")
->>>>>>> origin/master
 
 ![Alt text](http://i.imgur.com/BZQmiBT.png "Scammer Programs")
 
@@ -34,8 +30,4 @@ Please note that the picture might not be updated to the current version!
 ![Alt text](http://i.imgur.com/Mfs3GBT.png "Scammer Numbers")
 
 ![Alt text](http://i.imgur.com/bp0DDuH.png "About")
-=======
-![Alt text](http://i.imgur.com/s92g3Q6.png "Scammer Numbers")
 
-![Alt text](http://i.imgur.com/DvXaxm3.png "About")
->>>>>>> origin/master
