@@ -26,7 +26,6 @@ Please note that the picture might not be updated to the current version!
 
 ![Alt text](http://i.imgur.com/hRmMB9F.png "Report Scammer")
 
-<<<<<<< HEAD
 ![Alt text](http://i.imgur.com/Mfs3GBT.png "Scammer Numbers")
 
 ![Alt text](http://i.imgur.com/bp0DDuH.png "About")
