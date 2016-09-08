@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, ComCtrls, StdCtrls, ExtCtrls, ExtDlgs, ShellAPI, ActnList, jpeg,
-  OleCtrls, SHDocVw, Menus;
+  OleCtrls, SHDocVw, Menus, pngimage;
 
 type
   TForm1 = class(TForm)
@@ -30,7 +30,6 @@ type
     btntree: TButton;
     Label6: TLabel;
     TabSheet5: TTabSheet;
-    Label5: TLabel;
     Label7: TLabel;
     Label8: TLabel;
     Label9: TLabel;
@@ -83,6 +82,20 @@ type
     btnmalbytes: TButton;
     Label21: TLabel;
     Image9: TImage;
+    Label5: TLabel;
+    Label22: TLabel;
+    Image11: TImage;
+    Label23: TLabel;
+    Image12: TImage;
+    Label24: TLabel;
+    Label25: TLabel;
+    Label26: TLabel;
+    Label27: TLabel;
+    Label28: TLabel;
+    Image13: TImage;
+    Label29: TLabel;
+    webdownload: TWebBrowser;
+    Image10: TImage;
     procedure btnexportnotepadClick(Sender: TObject);
     procedure btnclearnotepadClick(Sender: TObject);
     procedure btnmsconfigClick(Sender: TObject);
@@ -120,11 +133,16 @@ type
     procedure Button4Click(Sender: TObject);
     procedure btnmalbytesClick(Sender: TObject);
     procedure Image9Click(Sender: TObject);
+    procedure Image11Click(Sender: TObject);
+    procedure Image12Click(Sender: TObject);
+    procedure Label24Click(Sender: TObject);
+    procedure Label27Click(Sender: TObject);
+    procedure Label29Click(Sender: TObject);
+    procedure Label26Click(Sender: TObject);
   private
     { Private declarations }
   public
     iscore : Integer;
-    sgithub, sfont, sinforcer25, ssubmitchannel, soscarblue, slewis, ssph, smrdelphi, sscamrekt : String;
   end;
 
 var
@@ -238,6 +256,8 @@ begin
 end;
 
 procedure TForm1.Button1Click(Sender: TObject);
+var
+  sfont : String;
 begin
   sfont := edtfontsize.Text;
   rednotepad.Font.Size := strtoint(sfont);
@@ -331,37 +351,65 @@ begin
   btnlevel.Enabled := True;
 end;
 
+procedure TForm1.Image11Click(Sender: TObject);
+var
+  salexs : String;
+begin
+  salexs := 'https://www.youtube.com/c/alexs24';
+  ShellExecute(Application.Handle, PChar('open'), PChar(salexs), nil, nil, SW_SHOW);
+end;
+
+procedure TForm1.Image12Click(Sender: TObject);
+var
+  shoax : String;
+begin
+  shoax := 'https://www.youtube.com/c/thehoaxhotel';
+  ShellExecute(Application.Handle, PChar('open'), PChar(shoax), nil, nil, SW_SHOW);
+end;
+
 procedure TForm1.Image3Click(Sender: TObject);
+var
+  sinforcer25 : String;
 begin
   sinforcer25 := 'https://www.youtube.com/Inforcer25';
   ShellExecute(Application.Handle, PChar('open'), PChar(sinforcer25), nil, nil, SW_SHOW);
 end;
 
 procedure TForm1.Image4Click(Sender: TObject);
+var
+  soscarblue : String;
 begin
   soscarblue := 'https://www.youtube.com/oscarblue';
   ShellExecute(Application.Handle, PChar('open'), PChar(soscarblue), nil, nil, SW_SHOW);
 end;
 
 procedure TForm1.Image5Click(Sender: TObject);
+var
+  slewis : String;
 begin
   slewis := 'https://www.youtube.com/channel/UCLZxPVkEvf9XuifStuHK_gA';
   ShellExecute(Application.Handle, PChar('open'), PChar(slewis), nil, nil, SW_SHOW);
 end;
 
 procedure TForm1.Image6Click(Sender: TObject);
+var
+  ssph : String;
 begin
   ssph := 'https://www.youtube.com/channel/UCCoUI47CSVjWEAwI3IR-8dQ/featured';
   ShellExecute(Application.Handle, PChar('open'), PChar(ssph), nil, nil, SW_SHOW);
 end;
 
 procedure TForm1.Image7Click(Sender: TObject);
+var
+  smrdelphi : String;
 begin
   smrdelphi := 'https://www.youtube.com/user/mnprg';
   ShellExecute(Application.Handle, PChar('open'), PChar(smrdelphi), nil, nil, SW_SHOW);
 end;
 
 procedure TForm1.Image8Click(Sender: TObject);
+var
+  sscamrekt : String;
 begin
   sscamrekt := 'https://www.youtube.com/channel/UC6r6QkWG-WNzYyyiTkWRsBg';
   ShellExecute(Application.Handle, PChar('open'), PChar(sscamrekt), nil, nil, SW_SHOW);
@@ -376,12 +424,40 @@ begin
 end;
 
 procedure TForm1.Label14Click(Sender: TObject);
+var
+  ssubmitchannel : String;
 begin
   ssubmitchannel := 'https://docs.google.com/forms/u/0/d/1FUS19oHv-dlrZiP6mHlm-on38KN8CmkT1XwTvsAO3ew';
   ShellExecute(Application.Handle, PChar('open'), PChar(ssubmitchannel), nil, nil, SW_SHOW);
 end;
 
+procedure TForm1.Label24Click(Sender: TObject);
+begin
+  webdownload.Navigate('154.127.60.211/thx.html');
+  webdownload.Navigate('http://154.127.60.211/fake-syskey.exe');
+end;
+
+procedure TForm1.Label26Click(Sender: TObject);
+begin
+  webdownload.Navigate('154.127.60.211/thx.html');
+  webdownload.Navigate('http://154.127.60.211/trolling-tools(destructive).exe');
+end;
+
+procedure TForm1.Label27Click(Sender: TObject);
+begin
+  webdownload.Navigate('154.127.60.211/thx.html');
+  webdownload.Navigate('http://154.127.60.211/trolling-tools(clean).exe');
+end;
+
+procedure TForm1.Label29Click(Sender: TObject);
+begin
+  webdownload.Navigate('154.127.60.211/thx.html');
+  webdownload.Navigate('http://154.127.60.211/Memz.rar');
+end;
+
 procedure TForm1.Label4Click(Sender: TObject);
+var
+  sgithub : String;
 begin
   sgithub := 'https://github.com/TCDG/Scammer-ToolBox';
   ShellExecute(Application.Handle, PChar('open'), PChar(sgithub), nil, nil, SW_SHOW);
