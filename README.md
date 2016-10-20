@@ -2,30 +2,22 @@
 Scammer ToolBox Provides alot of features and more are added after every update!
 
 ##Changelog
-- Added Alex S to the YouTubers list.
-- Added The Hoax Hotel to the YouTubers List
-- Added Anti-Scammer Tools (Both Trolling Tools are temporarly disabled)
-- Added Memz to Anti-Scammer Tools
-- Added Fake-Syskey to Anri-Scammer Tools
 
+- Re-Wrote Scammer Toolbox
+- Added Version Checker
+- Added Internet Connection Checker
 
 ##ToDo List
-- Add Updater (May take some time)
+- Add more Anti-Scammer Programs
 
 ##Preview 
 Please note that the picture might not be updated to the current version!
 
-![Alt text](http://i.imgur.com/0AIjmhq.png "Scammer Bingo")
+![Alt text](http://image.prntscr.com/image/b0a6d6ba1f0e47c38be0a778a6189f23.png "menu")
 
-![Alt text](http://i.imgur.com/7bILQoG.png "Notepad")
+![Alt text](http://image.prntscr.com/image/7b096076674c462995a22cbe5f5acb5d.png "Scammer Bingo")
 
-![Alt text](http://i.imgur.com/xhpVzIX.png "YouTubers")
+![Alt text](http://image.prntscr.com/image/0c993bb813b740479179a7a37047e99f.png "FakeID")
 
-![Alt text](http://i.imgur.com/RvQxSlP.png "Anti-Scammer Tools")
-
-![Alt text](http://i.imgur.com/miMwUVx.png "Report Scammer")
-
-![Alt text](http://i.imgur.com/ob2qIfH.png "Scammer Numbers")
-
-![Alt text](http://i.imgur.com/RaNQMLn.png "About")
+![Alt text](http://image.prntscr.com/image/4436e9ba4102416fab0fdcd4c6237153.png "Anti-Scammer Tools")
 
