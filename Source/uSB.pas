@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.jpeg, Vcl.ExtCtrls,
-  Vcl.StdCtrls;
+  Vcl.StdCtrls, Vcl.ComCtrls;
 
 type
   Tfrmscammberbingo = class(TForm)
@@ -27,6 +27,7 @@ type
     btnonetimesmallfee: TButton;
     btneachandeverything: TButton;
     btnreset: TButton;
+    pb1: TProgressBar;
     procedure btncmdClick(Sender: TObject);
     procedure btnmsconfigClick(Sender: TObject);
     procedure btnmsinfo32Click(Sender: TObject);
@@ -61,6 +62,7 @@ begin
   btncmd.Enabled := False;
   Inc(iscore);
   lblscore.Caption := IntToStr(iscore);
+  pb1.StepBy(1);
 
   if iscore = 13 then
     ShowMessage('Bingo!!! 1 question. Did you cheat? ( ͡° ͜ʖ ͡°)');
@@ -71,6 +73,7 @@ begin
   btneachandeverything.Enabled := False;
   Inc(iscore);
   lblscore.Caption := IntToStr(iscore);
+  pb1.StepBy(1);
 
   if iscore = 13 then
     ShowMessage('Bingo!!! 1 question. Did you cheat? ( ͡° ͜ʖ ͡°)');
@@ -81,6 +84,7 @@ begin
   btneventviewer.Enabled := False;
   Inc(iscore);
   lblscore.Caption := IntToStr(iscore);
+  pb1.StepBy(1);
 
   if iscore = 13 then
     ShowMessage('Bingo!!! 1 question. Did you cheat? ( ͡° ͜ʖ ͡°)');
@@ -91,6 +95,7 @@ begin
   btninfectednetwork.Enabled := False;
   Inc(iscore);
   lblscore.Caption := IntToStr(iscore);
+  pb1.StepBy(1);
 
   if iscore = 13 then
     ShowMessage('Bingo!!! 1 question. Did you cheat? ( ͡° ͜ʖ ͡°)');
@@ -101,6 +106,7 @@ begin
   btnmsconfig.Enabled := False;
   Inc(iscore);
   lblscore.Caption := IntToStr(iscore);
+  pb1.StepBy(1);
 
   if iscore = 13 then
     ShowMessage('Bingo!!! 1 question. Did you cheat? ( ͡° ͜ʖ ͡°)');
@@ -111,6 +117,7 @@ begin
   btnmsinfo32.Enabled := False;
   Inc(iscore);
   lblscore.Caption := IntToStr(iscore);
+  pb1.StepBy(1);
 
   if iscore = 13 then
     ShowMessage('Bingo!!! 1 question. Did you cheat? ( ͡° ͜ʖ ͡°)');
@@ -121,6 +128,7 @@ begin
   btnnetstat.Enabled := False;
   Inc(iscore);
   lblscore.Caption := IntToStr(iscore);
+  pb1.StepBy(1);
 
   if iscore = 13 then
     ShowMessage('Bingo!!! 1 question. Did you cheat? ( ͡° ͜ʖ ͡°)');
@@ -131,6 +139,7 @@ begin
   btnomg.Enabled := False;
   Inc(iscore);
   lblscore.Caption := IntToStr(iscore);
+  pb1.StepBy(1);
 
   if iscore = 13 then
     ShowMessage('Bingo!!! 1 question. Did you cheat? ( ͡° ͜ʖ ͡°)');
@@ -141,6 +150,7 @@ begin
   btnonetimesmallfee.Enabled := False;
   Inc(iscore);
   lblscore.Caption := IntToStr(iscore);
+  pb1.StepBy(1);
 
   if iscore = 13 then
     ShowMessage('Bingo!!! 1 question. Did you cheat? ( ͡° ͜ʖ ͡°)');
@@ -150,6 +160,7 @@ procedure Tfrmscammberbingo.btnresetClick(Sender: TObject);
 begin
   iscore := 0;
   lblscore.Caption := '0';
+  pb1.Position := 0;
 
   btncmd.Enabled := True;
   btnmsconfig.Enabled := True;
@@ -171,6 +182,7 @@ begin
   btnstoppeservices.Enabled := False;
   Inc(iscore);
   lblscore.Caption := IntToStr(iscore);
+  pb1.StepBy(1);
 
   if iscore = 13 then
     ShowMessage('Bingo!!! 1 question. Did you cheat? ( ͡° ͜ʖ ͡°)');
@@ -181,6 +193,7 @@ begin
   btnsyskey.Enabled := False;
   Inc(iscore);
   lblscore.Caption := IntToStr(iscore);
+  pb1.StepBy(1);
 
   if iscore = 13 then
     ShowMessage('Bingo!!! 1 question. Did you cheat? ( ͡° ͜ʖ ͡°)');
@@ -191,6 +204,7 @@ begin
   btntree.Enabled := False;
   Inc(iscore);
   lblscore.Caption := IntToStr(iscore);
+  pb1.StepBy(1);
 
   if iscore = 13 then
     ShowMessage('Bingo!!! 1 question. Did you cheat? ( ͡° ͜ʖ ͡°)');
@@ -201,6 +215,7 @@ begin
   btnwirusesfound.Enabled := False;
   Inc(iscore);
   lblscore.Caption := IntToStr(iscore);
+  pb1.StepBy(1);
 
   if iscore = 13 then
     ShowMessage('Bingo!!! 1 question. Did you cheat? ( ͡° ͜ʖ ͡°)');

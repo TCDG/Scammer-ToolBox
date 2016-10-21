@@ -19851,7 +19851,7 @@ object frmmain: Tfrmmain
     Top = 383
     Width = 37
     Height = 19
-    Caption = '1.0.3'
+    Caption = '1.0.4'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWhite
     Font.Height = -16
@@ -19900,7 +19900,7 @@ object frmmain: Tfrmmain
     ParentFont = False
   end
   object btnfakeid: TButton
-    Left = 32
+    Left = 336
     Top = 24
     Width = 265
     Height = 129
@@ -19915,7 +19915,7 @@ object frmmain: Tfrmmain
     OnClick = btnfakeidClick
   end
   object btn2: TButton
-    Left = 336
+    Left = 32
     Top = 24
     Width = 265
     Height = 129

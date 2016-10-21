@@ -4,7 +4,7 @@ object frmscammberbingo: Tfrmscammberbingo
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Scammer Bingo'
-  ClientHeight = 527
+  ClientHeight = 564
   ClientWidth = 706
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -2135,7 +2135,7 @@ object frmscammberbingo: Tfrmscammberbingo
     Left = 0
     Top = 0
     Width = 706
-    Height = 527
+    Height = 564
     Align = alClient
     Picture.Data = {
       0A544A504547496D6167653FA30800FFD8FFDB00430003020203020203030303
@@ -19836,7 +19836,7 @@ object frmscammberbingo: Tfrmscammberbingo
   end
   object lbl1: TLabel
     Left = 270
-    Top = 480
+    Top = 523
     Width = 76
     Height = 33
     Caption = 'Score:'
@@ -19849,7 +19849,7 @@ object frmscammberbingo: Tfrmscammberbingo
   end
   object lblscore: TLabel
     Left = 352
-    Top = 480
+    Top = 523
     Width = 15
     Height = 33
     Caption = '0'
@@ -19862,7 +19862,7 @@ object frmscammberbingo: Tfrmscammberbingo
   end
   object lbl2: TLabel
     Left = 388
-    Top = 480
+    Top = 523
     Width = 48
     Height = 33
     Caption = '/ 13'
@@ -20070,7 +20070,7 @@ object frmscammberbingo: Tfrmscammberbingo
   end
   object btnreset: TButton
     Left = 297
-    Top = 416
+    Top = 459
     Width = 112
     Height = 58
     Caption = 'Reset'
@@ -20082,5 +20082,13 @@ object frmscammberbingo: Tfrmscammberbingo
     ParentFont = False
     TabOrder = 13
     OnClick = btnresetClick
+  end
+  object pb1: TProgressBar
+    Left = 32
+    Top = 408
+    Width = 641
+    Height = 33
+    Max = 13
+    TabOrder = 14
   end
 end
