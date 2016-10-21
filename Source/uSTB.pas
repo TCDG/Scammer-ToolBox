@@ -6,7 +6,7 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.jpeg, Vcl.ExtCtrls,
   Vcl.StdCtrls, uFakeID, uSB, uUpdater, IdBaseComponent, IdComponent, IdTCPConnection,
-  IdTCPClient, IdHTTP, wininet, Vcl.ComCtrls, uAntiScammerPrograms, ShellAPI;
+  IdTCPClient, IdHTTP, wininet, Vcl.ComCtrls, uAntiScammerPrograms, ShellAPI, uvm;
 
 type
   Tfrmmain = class(TForm)
@@ -22,11 +22,13 @@ type
     lblversion: TLabel;
     btnupdate: TButton;
     rednews: TRichEdit;
+    btnvm: TButton;
     procedure btnfakeidClick(Sender: TObject);
     procedure btn2Click(Sender: TObject);
     procedure FormActivate(Sender: TObject);
     procedure btn3Click(Sender: TObject);
     procedure btnupdateClick(Sender: TObject);
+    procedure btnvmClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -66,6 +68,11 @@ var
 begin
   github := 'https://github.com/TCDG/Scammer-ToolBox';
   ShellExecute(Application.Handle, PChar('open'), PChar(github), nil, nil, SW_SHOW);
+end;
+
+procedure Tfrmmain.btnvmClick(Sender: TObject);
+begin
+  frmvm.Show;
 end;
 
 procedure Tfrmmain.btn2Click(Sender: TObject);

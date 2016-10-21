@@ -19851,7 +19851,7 @@ object frmmain: Tfrmmain
     Top = 383
     Width = 37
     Height = 19
-    Caption = '1.0.4'
+    Caption = '1.0.5'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWhite
     Font.Height = -16
@@ -19932,12 +19932,12 @@ object frmmain: Tfrmmain
   object btn3: TButton
     Left = 32
     Top = 168
-    Width = 569
+    Width = 265
     Height = 64
     Caption = 'Anti-scammer Programs'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -32
+    Font.Height = -21
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
@@ -19973,9 +19973,25 @@ object frmmain: Tfrmmain
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
+    ReadOnly = True
     ScrollBars = ssVertical
     TabOrder = 4
     Zoom = 100
+  end
+  object btnvm: TButton
+    Left = 336
+    Top = 168
+    Width = 265
+    Height = 64
+    Caption = 'Set up VM'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+    OnClick = btnvmClick
   end
   object idhtp1: TIdHTTP
     AllowCookies = True

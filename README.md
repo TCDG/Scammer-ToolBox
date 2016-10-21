@@ -1,15 +1,6 @@
 #Scammer ToolBox
 Scammer ToolBox Provides alot of features and more are added after every update!
 
-##Changelog
-
-- Re-Wrote Scammer Toolbox
-- Added Version Checker
-- Added Internet Connection Checker
-
-##ToDo List
-- Add more Anti-Scammer Programs
-
 ##Preview 
 Please note that the picture might not be updated to the current version!
 

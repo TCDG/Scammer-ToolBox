@@ -19837,10 +19837,10 @@ object frmASP: TfrmASP
   object lbl1: TLabel
     Left = 28
     Top = 240
-    Width = 700
+    Width = 693
     Height = 66
     Caption = 
-      'More programs are being added. Please submit a pragram          ' +
+      'More programs are being added. Please submit a program          ' +
       '     (doesnt have to be yours) so I can add it'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWhite

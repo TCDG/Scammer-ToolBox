@@ -102,6 +102,10 @@
             <Form>frmASP</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="uvm.pas">
+            <Form>frmvm</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
