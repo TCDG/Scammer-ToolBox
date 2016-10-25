@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.jpeg,
-  Vcl.StdCtrls, Vcl.ComCtrls, ShellAPI, WinInet;
+  Vcl.StdCtrls, Vcl.ComCtrls, ShellAPI, WinInet, Vcl.Imaging.pngimage;
 
 type
   Tfrmvm = class(TForm)
@@ -17,8 +17,8 @@ type
     btn2: TButton;
     lbl3: TLabel;
     btn3: TButton;
-    lbl4: TLabel;
     lblstatus: TLabel;
+    img2: TImage;
     procedure btn2Click(Sender: TObject);
     procedure btn1Click(Sender: TObject);
     procedure FormActivate(Sender: TObject);
@@ -67,6 +67,9 @@ begin
     begin
       lblstatus.Caption := 'Offline!';
       lblstatus.Font.Color := clLime;
+      btn1.Enabled := False;
+      btn2.Enabled := False;
+      btn3.Enabled := False;
     end;
 end;
 

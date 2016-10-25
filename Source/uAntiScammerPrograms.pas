@@ -64,6 +64,7 @@ begin
     begin
       lblconnection.Caption := 'Offline';
       lblconnection.Font.Color := clRed;
+      btnmemz.Enabled := False;
     end;
 end;
 

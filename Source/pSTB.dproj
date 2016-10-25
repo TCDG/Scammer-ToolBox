@@ -40,6 +40,7 @@
         <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base)'!=''">
+        <VCL_Custom_Styles>Obsidian|VCLSTYLE|$(PUBLIC)\Documents\Embarcadero\Studio\15.0\Styles\Obsidian.vsf</VCL_Custom_Styles>
         <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
         <SanitizedProjectName>pSTB</SanitizedProjectName>
@@ -88,22 +89,6 @@
         </DelphiCompile>
         <DCCReference Include="uSTB.pas">
             <Form>frmmain</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="uFakeID.pas">
-            <Form>frmfakeid</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="uSB.pas">
-            <Form>frmscammberbingo</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="uAntiScammerPrograms.pas">
-            <Form>frmASP</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="uvm.pas">
-            <Form>frmvm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
