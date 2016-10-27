@@ -56,9 +56,9 @@ type
     btn1: TButton;
     btn2: TButton;
     img3: TImage;
-    redt2: TRichEdit;
     lbl6: TLabel;
     btn3: TButton;
+    lbl7: TLabel;
     procedure FormActivate(Sender: TObject);
     procedure btnupdateClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -317,10 +317,6 @@ begin
 
   bconnected := InternetGetConnectedState(@origin,0);
 
-  currentversion := '1.0.7';
-
-  lblcurrentversion.Caption := currentversion;
-
   if bconnected = True then
     Begin
       slatestversion := idhtp1.Get('http://154.127.60.211/version.html');
@@ -329,7 +325,7 @@ begin
 
       webfakeid.Navigate('http://www.fakenamegenerator.com/');
 
-      if slatestversion >= currentversion then
+      if slatestversion >= '1.0.9' then
         begin
           ShowMessage('There is a new update avalible! Please click Update at the bottom right.');
           btnupdate.Enabled := True;
