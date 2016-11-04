@@ -59,6 +59,7 @@ type
     lbl6: TLabel;
     btn3: TButton;
     lbl7: TLabel;
+    btn4: TButton;
     procedure FormActivate(Sender: TObject);
     procedure btnupdateClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -83,6 +84,8 @@ type
     procedure btnhindiClick(Sender: TObject);
     procedure btn1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
+    procedure btn4Click(Sender: TObject);
+    procedure btn3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -280,6 +283,37 @@ begin
   ShellExecute(Application.Handle, PChar('open'), PChar('https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-12.5.0-4352439.x86_64.bundle'), nil, nil, SW_SHOW);
 end;
 
+procedure Tfrmmain.btn3Click(Sender: TObject);
+begin
+  ShellExecute(Application.Handle, PChar('open'), PChar('https://github.com/TCDG/Scammer-ToolBox'), nil, nil, SW_SHOW);
+end;
+
+procedure Tfrmmain.btn4Click(Sender: TObject);
+begin
+  btncmd.Enabled := True;
+  btneach.Enabled := True;
+  btneventviewer.Enabled := True;
+  btninfectednetwork.Enabled := True;
+  btntree.Enabled := True;
+  btnstoppedservices.Enabled := True;
+  btnsmalltalk.Enabled := True;
+  btnmsconfig.Enabled := True;
+  btnmsinfo32.Enabled := True;
+  btnfirewall.Enabled := True;
+  btnwirusesfound.Enabled := True;
+  btnsyskey.Enabled := True;
+  btnnetstat.Enabled := True;
+  btnrandomcrap.Enabled := True;
+  btnlevel.Enabled := True;
+  btnfee.Enabled := True;
+  btnonething.Enabled := True;
+  btnsecureserver.Enabled := True;
+  btnhindi.Enabled := True;
+
+  score := 0;
+  lblscore.Caption := IntToStr(score);
+end;
+
 procedure Tfrmmain.btncmdClick(Sender: TObject);
 begin
   btncmd.Enabled := False;
@@ -325,7 +359,7 @@ begin
 
       webfakeid.Navigate('http://www.fakenamegenerator.com/');
 
-      if slatestversion >= '1.0.9' then
+      if slatestversion >= '1.1.2' then
         begin
           ShowMessage('There is a new update avalible! Please click Update at the bottom right.');
           btnupdate.Enabled := True;
