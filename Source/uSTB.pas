@@ -56,10 +56,12 @@ type
     btn1: TButton;
     btn2: TButton;
     img3: TImage;
-    lbl6: TLabel;
     btn3: TButton;
     lbl7: TLabel;
     btn4: TButton;
+    btn5: TButton;
+    lbldfb: TLabel;
+    lbl6: TLabel;
     procedure FormActivate(Sender: TObject);
     procedure btnupdateClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -86,6 +88,7 @@ type
     procedure btn2Click(Sender: TObject);
     procedure btn4Click(Sender: TObject);
     procedure btn3Click(Sender: TObject);
+    procedure btn5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -314,6 +317,13 @@ begin
   lblscore.Caption := IntToStr(score);
 end;
 
+procedure Tfrmmain.btn5Click(Sender: TObject);
+Var
+  github : String;
+begin
+  ShellExecute(Application.Handle, PChar('open'), PChar('https://drive.google.com/file/d/0B7PKcWweqKImcFVuY0tab0tQTXM/view?usp=sharing'), nil, nil, SW_SHOW);
+end;
+
 procedure Tfrmmain.btncmdClick(Sender: TObject);
 begin
   btncmd.Enabled := False;
@@ -347,6 +357,8 @@ var
   slatestversion, snews : string;
   origin : cardinal;
 begin
+  pagecontrol.ActivePage := ts1;
+
   Application.Title := 'Scammer ToolBox';
 
   bconnected := InternetGetConnectedState(@origin,0);
@@ -359,7 +371,7 @@ begin
 
       webfakeid.Navigate('http://www.fakenamegenerator.com/');
 
-      if slatestversion >= '1.1.2' then
+      if slatestversion >= '1.1.3' then
         begin
           ShowMessage('There is a new update avalible! Please click Update at the bottom right.');
           btnupdate.Enabled := True;
