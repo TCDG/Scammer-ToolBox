@@ -381,7 +381,7 @@ begin
 
       webfakeid.Navigate('http://www.fakenamegenerator.com/');
 
-      if slatestversion >= '1.1.3' then
+      if slatestversion >= '1.1.4' then
         begin
           ShowMessage('There is a new update avalible! Please click Update at the bottom right.');
           btnupdate.Enabled := True;

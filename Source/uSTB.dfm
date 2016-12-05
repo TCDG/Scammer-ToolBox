@@ -2257,8 +2257,6 @@ object frmmain: Tfrmmain
     TabOrder = 2
     object ts1: TTabSheet
       Caption = 'Scammer Bingo'
-      ExplicitLeft = 28
-      ExplicitTop = 48
       object lblscore: TLabel
         Left = 435
         Top = 344
@@ -2482,6 +2480,10 @@ object frmmain: Tfrmmain
     object ts2: TTabSheet
       Caption = 'Fake ID'
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object webfakeid: TWebBrowser
         Left = 0
         Top = 41
@@ -2516,6 +2518,10 @@ object frmmain: Tfrmmain
     object ts3: TTabSheet
       Caption = 'Download and Install WMware'
       ImageIndex = 2
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object lbl5: TLabel
         Left = 23
         Top = 74
@@ -3537,6 +3543,10 @@ object frmmain: Tfrmmain
     object ts4: TTabSheet
       Caption = 'OS'#39's and Pre-Made VM'#39's'
       ImageIndex = 3
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object lbldfb: TLabel
         Left = 44
         Top = 71
@@ -3585,6 +3595,10 @@ object frmmain: Tfrmmain
     object ts5: TTabSheet
       Caption = 'Win Acti'
       ImageIndex = 4
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object lbl8: TLabel
         Left = 169
         Top = 16
