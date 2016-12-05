@@ -11,7 +11,6 @@ uses
 
 type
   Tfrmmain = class(TForm)
-    img1: TImage;
     lbl1: TLabel;
     lblcurrentversion: TLabel;
     idhtp1: TIdHTTP;
@@ -25,9 +24,6 @@ type
     ts2: TTabSheet;
     ts3: TTabSheet;
     ts4: TTabSheet;
-    img2: TImage;
-    img4: TImage;
-    img5: TImage;
     redt1: TRichEdit;
     btncmd: TButton;
     lblscore: TLabel;
@@ -62,6 +58,13 @@ type
     btn5: TButton;
     lbldfb: TLabel;
     lbl6: TLabel;
+    ts5: TTabSheet;
+    lbl8: TLabel;
+    lbl9: TLabel;
+    btn6: TButton;
+    lbl10: TLabel;
+    pnl1: TPanel;
+    btn7: TButton;
     procedure FormActivate(Sender: TObject);
     procedure btnupdateClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -89,6 +92,8 @@ type
     procedure btn4Click(Sender: TObject);
     procedure btn3Click(Sender: TObject);
     procedure btn5Click(Sender: TObject);
+    procedure btn6Click(Sender: TObject);
+    procedure btn7Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -318,10 +323,18 @@ begin
 end;
 
 procedure Tfrmmain.btn5Click(Sender: TObject);
-Var
-  github : String;
 begin
   ShellExecute(Application.Handle, PChar('open'), PChar('https://drive.google.com/file/d/0B7PKcWweqKImcFVuY0tab0tQTXM/view?usp=sharing'), nil, nil, SW_SHOW);
+end;
+
+procedure Tfrmmain.btn6Click(Sender: TObject);
+begin
+  ShellExecute(Application.Handle, PChar('open'), PChar('http://154.127.60.211/downloads/win-acti.zip'), nil, nil, SW_SHOW);
+end;
+
+procedure Tfrmmain.btn7Click(Sender: TObject);
+begin
+  ShellExecute(Application.Handle, PChar('open'), PChar('https://goo.gl/forms/nMhbODor12pG9W9F3'), nil, nil, SW_SHOW);
 end;
 
 procedure Tfrmmain.btncmdClick(Sender: TObject);
@@ -335,11 +348,8 @@ begin
 end;
 
 procedure Tfrmmain.btnupdateClick(Sender: TObject);
-var
-  github : string;
 begin
-  github := 'https://github.com/TCDG/Scammer-ToolBox';
-  ShellExecute(Application.Handle, PChar('open'), PChar(github), nil, nil, SW_SHOW);
+  ShellExecute(Application.Handle, PChar('open'), PChar('https://github.com/TCDG/Scammer-ToolBox'), nil, nil, SW_SHOW);
 end;
 
 procedure Tfrmmain.btnwirusesfoundClick(Sender: TObject);

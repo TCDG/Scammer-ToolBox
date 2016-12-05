@@ -11,7 +11,7 @@ uses
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  TStyleManager.TrySetStyle('Obsidian');
+  TStyleManager.TrySetStyle('Metropolis UI Black');
   Application.CreateForm(Tfrmmain, frmmain);
   Application.Run;
 end.
