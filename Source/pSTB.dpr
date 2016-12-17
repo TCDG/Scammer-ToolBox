@@ -4,14 +4,16 @@ uses
   Vcl.Forms,
   uSTB in 'uSTB.pas' {frmmain},
   Vcl.Themes,
-  Vcl.Styles;
+  Vcl.Styles,
+  uChangelog in 'uChangelog.pas' {Form1};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  TStyleManager.TrySetStyle('Metropolis UI Black');
+  TStyleManager.TrySetStyle('Ruby Graphite');
   Application.CreateForm(Tfrmmain, frmmain);
+  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.

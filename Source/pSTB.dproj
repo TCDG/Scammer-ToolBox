@@ -40,7 +40,7 @@
         <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base)'!=''">
-        <VCL_Custom_Styles>&quot;Metropolis UI Black|VCLSTYLE|$(PUBLIC)\Documents\Embarcadero\Studio\15.0\Styles\MetropolisUIBlack.vsf&quot;</VCL_Custom_Styles>
+        <VCL_Custom_Styles>&quot;Ruby Graphite|VCLSTYLE|$(PUBLIC)\Documents\Embarcadero\Studio\15.0\Styles\RubyGraphite.vsf&quot;</VCL_Custom_Styles>
         <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
         <SanitizedProjectName>pSTB</SanitizedProjectName>
@@ -72,7 +72,7 @@
         <DCC_RemoteDebug>true</DCC_RemoteDebug>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
-        <Icon_MainIcon>pSTB_Icon.ico</Icon_MainIcon>
+        <Icon_MainIcon>main.ico</Icon_MainIcon>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
@@ -89,6 +89,10 @@
         </DelphiCompile>
         <DCCReference Include="uSTB.pas">
             <Form>frmmain</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="uChangelog.pas">
+            <Form>Form1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

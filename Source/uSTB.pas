@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.jpeg, Vcl.ExtCtrls,
   Vcl.StdCtrls, uFakeID, uSB, uUpdater, IdBaseComponent, IdComponent, IdTCPConnection,
   IdTCPClient, IdHTTP, wininet, Vcl.ComCtrls, uAntiScammerPrograms, ShellAPI, uvm,
-  MetropolisUI.Tile, Vcl.OleCtrls, SHDocVw, Vcl.Imaging.pngimage;
+  MetropolisUI.Tile, Vcl.OleCtrls, SHDocVw, Vcl.Imaging.pngimage, uChangelog;
 
 type
   Tfrmmain = class(TForm)
@@ -18,13 +18,11 @@ type
     lbl2: TLabel;
     lblversion: TLabel;
     btnupdate: TButton;
-    rednews: TRichEdit;
     pagecontrol: TPageControl;
     ts1: TTabSheet;
     ts2: TTabSheet;
     ts3: TTabSheet;
     ts4: TTabSheet;
-    redt1: TRichEdit;
     btncmd: TButton;
     lblscore: TLabel;
     lbl3: TLabel;
@@ -59,12 +57,18 @@ type
     lbldfb: TLabel;
     lbl6: TLabel;
     ts5: TTabSheet;
-    lbl8: TLabel;
-    lbl9: TLabel;
-    btn6: TButton;
-    lbl10: TLabel;
     pnl1: TPanel;
     btn7: TButton;
+    grp1: TGroupBox;
+    btn6: TButton;
+    btn8: TButton;
+    btn9: TButton;
+    btn10: TButton;
+    btn11: TButton;
+    btnMicrosoft: TButton;
+    lbl8: TLabel;
+    btn12: TButton;
+    mmo1: TMemo;
     procedure FormActivate(Sender: TObject);
     procedure btnupdateClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -92,8 +96,14 @@ type
     procedure btn4Click(Sender: TObject);
     procedure btn3Click(Sender: TObject);
     procedure btn5Click(Sender: TObject);
-    procedure btn6Click(Sender: TObject);
     procedure btn7Click(Sender: TObject);
+    procedure btn8Click(Sender: TObject);
+    procedure btn9Click(Sender: TObject);
+    procedure btn6Click(Sender: TObject);
+    procedure btn10Click(Sender: TObject);
+    procedure btn11Click(Sender: TObject);
+    procedure btnMicrosoftClick(Sender: TObject);
+    procedure btn12Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -179,6 +189,11 @@ begin
 
   if score = 19 then
     ShowMessage('Woa Bingo!!! Congratz Baiter!');
+end;
+
+procedure Tfrmmain.btnMicrosoftClick(Sender: TObject);
+begin
+  ShellExecute(Application.Handle, PChar('open'), PChar('https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/'), nil, nil, SW_SHOW);
 end;
 
 procedure Tfrmmain.btnmsconfigClick(Sender: TObject);
@@ -281,6 +296,21 @@ begin
     ShowMessage('Woa Bingo!!! Congratz Baiter!');
 end;
 
+procedure Tfrmmain.btn10Click(Sender: TObject);
+begin
+  ShellExecute(Application.Handle, PChar('open'), PChar('https://goo.gl/forms/KSRbE1GrmMOqzrcW2'), nil, nil, SW_SHOW);
+end;
+
+procedure Tfrmmain.btn11Click(Sender: TObject);
+begin
+  webfakeid.Refresh
+end;
+
+procedure Tfrmmain.btn12Click(Sender: TObject);
+begin
+  Form1.Show;
+end;
+
 procedure Tfrmmain.btn1Click(Sender: TObject);
 begin
   ShellExecute(Application.Handle, PChar('open'), PChar('https://download3.vmware.com/software/wkst/file/VMware-workstation-full-12.5.0-4352439.exe'), nil, nil, SW_SHOW);
@@ -327,14 +357,25 @@ begin
   ShellExecute(Application.Handle, PChar('open'), PChar('https://drive.google.com/file/d/0B7PKcWweqKImcFVuY0tab0tQTXM/view?usp=sharing'), nil, nil, SW_SHOW);
 end;
 
+
 procedure Tfrmmain.btn6Click(Sender: TObject);
 begin
-  ShellExecute(Application.Handle, PChar('open'), PChar('http://154.127.60.211/downloads/win-acti.zip'), nil, nil, SW_SHOW);
+  ShellExecute(Application.Handle, PChar('open'), PChar('http://www.mediafire.com/file/3i2qfjkcbjsl5qs/Anti-Scammer+Toolset+-+Version+2.0.zip'), nil, nil, SW_SHOW);
 end;
 
 procedure Tfrmmain.btn7Click(Sender: TObject);
 begin
   ShellExecute(Application.Handle, PChar('open'), PChar('https://goo.gl/forms/nMhbODor12pG9W9F3'), nil, nil, SW_SHOW);
+end;
+
+procedure Tfrmmain.btn8Click(Sender: TObject);
+begin
+  ShellExecute(Application.Handle, PChar('open'), PChar('https://www.youtube.com/channel/UC_b1bYSup-dHfwIoIXP0zPQ'), nil, nil, SW_SHOW);
+end;
+
+procedure Tfrmmain.btn9Click(Sender: TObject);
+begin
+  ShellExecute(Application.Handle, PChar('open'), PChar('https://www.youtube.com/watch?v=SN6x7LO8alU&t=1s'), nil, nil, SW_SHOW);
 end;
 
 procedure Tfrmmain.btncmdClick(Sender: TObject);
@@ -381,7 +422,7 @@ begin
 
       webfakeid.Navigate('http://www.fakenamegenerator.com/');
 
-      if slatestversion >= '1.1.4' then
+      if slatestversion >= '1.1.5' then
         begin
           ShowMessage('There is a new update avalible! Please click Update at the bottom right.');
           btnupdate.Enabled := True;
@@ -396,6 +437,8 @@ begin
 
       ShowMessage('You are currently offline. FakeID needs Internet to work!');
     End;
+
+  btncmd.SetFocus;
 end;
 
 procedure Tfrmmain.FormClose(Sender: TObject; var Action: TCloseAction);
