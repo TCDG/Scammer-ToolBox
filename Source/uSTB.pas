@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.jpeg, Vcl.ExtCtrls,
   Vcl.StdCtrls, uFakeID, uSB, uUpdater, IdBaseComponent, IdComponent, IdTCPConnection,
   IdTCPClient, IdHTTP, wininet, Vcl.ComCtrls, uAntiScammerPrograms, ShellAPI, uvm,
-  MetropolisUI.Tile, Vcl.OleCtrls, SHDocVw, Vcl.Imaging.pngimage, uChangelog;
+  MetropolisUI.Tile, Vcl.OleCtrls, SHDocVw, Vcl.Imaging.pngimage, uChangelog, uYouTubers;
 
 type
   Tfrmmain = class(TForm)
@@ -69,6 +69,7 @@ type
     lbl8: TLabel;
     btn12: TButton;
     mmo1: TMemo;
+    btn13: TButton;
     procedure FormActivate(Sender: TObject);
     procedure btnupdateClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -104,6 +105,7 @@ type
     procedure btn11Click(Sender: TObject);
     procedure btnMicrosoftClick(Sender: TObject);
     procedure btn12Click(Sender: TObject);
+    procedure btn13Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -311,6 +313,11 @@ begin
   Form1.Show;
 end;
 
+procedure Tfrmmain.btn13Click(Sender: TObject);
+begin
+  Form2.Show;
+end;
+
 procedure Tfrmmain.btn1Click(Sender: TObject);
 begin
   ShellExecute(Application.Handle, PChar('open'), PChar('https://download3.vmware.com/software/wkst/file/VMware-workstation-full-12.5.0-4352439.exe'), nil, nil, SW_SHOW);
@@ -422,7 +429,7 @@ begin
 
       webfakeid.Navigate('http://www.fakenamegenerator.com/');
 
-      if slatestversion >= '1.1.5' then
+      if slatestversion >= '1.1.6' then
         begin
           ShowMessage('There is a new update avalible! Please click Update at the bottom right.');
           btnupdate.Enabled := True;

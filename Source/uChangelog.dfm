@@ -5,7 +5,7 @@ object Form1: TForm1
   BorderStyle = bsSingle
   Caption = 'Changelog:'
   ClientHeight = 491
-  ClientWidth = 398
+  ClientWidth = 406
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -13,7 +13,6 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
-  OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
   object btn1: TButton
@@ -45,16 +44,29 @@ object Form1: TForm1
     Lines.Strings = (
       'Changelog:'
       ''
+      '(Version 1.1.5)'
+      '-----------------------------'
+      '- Added YouTubers Form'
+      '  (Shows YouTubers that does '
+      '  scambaiting)'
+      '- Small bugfix when closing the '
+      '  changelog form it cant be opened '
+      '  again.'
+      ''
+      '(Version 1.1.4)'
+      '-----------------------------'
       '- Changed the GUI'
       '- Added Changelog form'
       '- Made the tabs bigger'
       '- Added Anti-Scammer Programs'
       '- Some bug fixes'
       '- Added Microsoft VM'
-      '- Added video tutorial for installing vmWare '
-      'for free')
+      '- Added video tutorial for installing '
+      'vmWare '
+      '  for free')
     ParentFont = False
     ReadOnly = True
+    ScrollBars = ssVertical
     TabOrder = 1
     Zoom = 100
   end

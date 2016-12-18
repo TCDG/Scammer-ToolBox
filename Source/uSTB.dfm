@@ -75,7 +75,7 @@ object frmmain: Tfrmmain
     Top = 575
     Width = 37
     Height = 19
-    Caption = '1.1.4'
+    Caption = '1.1.5'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
     Font.Height = -16
@@ -1596,7 +1596,7 @@ object frmmain: Tfrmmain
     Caption = 'GitHub Page'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -16
+    Font.Height = -19
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
@@ -1606,7 +1606,7 @@ object frmmain: Tfrmmain
     OnClick = btn3Click
   end
   object btn12: TButton
-    Left = 184
+    Left = 232
     Top = 575
     Width = 113
     Height = 43
@@ -1619,6 +1619,21 @@ object frmmain: Tfrmmain
     ParentFont = False
     TabOrder = 3
     OnClick = btn12Click
+  end
+  object btn13: TButton
+    Left = 367
+    Top = 575
+    Width = 113
+    Height = 43
+    Caption = 'YouTubers'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+    OnClick = btn13Click
   end
   object idhtp1: TIdHTTP
     AllowCookies = True

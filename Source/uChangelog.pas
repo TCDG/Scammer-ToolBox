@@ -11,7 +11,6 @@ type
     btn1: TButton;
     redt1: TRichEdit;
     procedure btn1Click(Sender: TObject);
-    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -28,11 +27,6 @@ implementation
 procedure TForm1.btn1Click(Sender: TObject);
 begin
   Close;
-end;
-
-procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
-begin
-  Release;
 end;
 
 end.
