@@ -1,7 +1,7 @@
 #Scammer ToolBox
 Scammer ToolBox Provides alot of features and more are added after every update!
 
-Direct Download: https://github.com/TCDG/Scammer-ToolBox/raw/master/Scammer%20Toolbox%20v1.1.4.exe
+Direct Download: https://github.com/TCDG/Scammer-ToolBox/raw/master/Scammer%20Toolbox%20v1.1.5.exe
 
 ##Preview 
 Please note that the picture might not be updated to the current version!
