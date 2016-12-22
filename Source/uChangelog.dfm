@@ -44,6 +44,13 @@ object Form1: TForm1
     Lines.Strings = (
       'Changelog:'
       ''
+      '(Version 1.1.6)'
+      '-----------------------------'
+      '- Small bug fix'
+      '- Added option to open FakeID '
+      '  externally'
+      '- New youtuber in youtubers form.'
+      ''
       '(Version 1.1.5)'
       '-----------------------------'
       '- Added YouTubers Form'
@@ -62,8 +69,7 @@ object Form1: TForm1
       '- Some bug fixes'
       '- Added Microsoft VM'
       '- Added video tutorial for installing '
-      'vmWare '
-      '  for free')
+      '  vmWare for free')
     ParentFont = False
     ReadOnly = True
     ScrollBars = ssVertical

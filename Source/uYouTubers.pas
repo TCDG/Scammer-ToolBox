@@ -35,7 +35,14 @@ type
     btn14: TButton;
     ts2: TTabSheet;
     lbl1: TLabel;
-    lbl2: TLabel;
+    btn15: TButton;
+    btn16: TButton;
+    btn17: TButton;
+    grp5: TGroupBox;
+    img5: TImage;
+    btn18: TButton;
+    btn19: TButton;
+    btn20: TButton;
     procedure btn1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
     procedure btn4Click(Sender: TObject);
@@ -49,6 +56,10 @@ type
     procedure btn9Click(Sender: TObject);
     procedure btn11Click(Sender: TObject);
     procedure btn12Click(Sender: TObject);
+    procedure btn15Click(Sender: TObject);
+    procedure btn16Click(Sender: TObject);
+    procedure btn17Click(Sender: TObject);
+    procedure btn18Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -71,6 +82,26 @@ end;
 procedure TForm2.btn12Click(Sender: TObject);
 begin
   ShellExecute(Application.Handle, PChar('open'), PChar('https://www.youtube.com/channel/UCcTPklJvT-3u0e7K6HBKYvw'), nil, nil, SW_SHOW);
+end;
+
+procedure TForm2.btn15Click(Sender: TObject);
+begin
+  pgc1.ActivePage := ts2;
+end;
+
+procedure TForm2.btn16Click(Sender: TObject);
+begin
+  pgc1.ActivePage := ts1;
+end;
+
+procedure TForm2.btn17Click(Sender: TObject);
+begin
+  //pgc1.ActivePage := ts3;
+end;
+
+procedure TForm2.btn18Click(Sender: TObject);
+begin
+  ShellExecute(Application.Handle, PChar('open'), PChar('https://www.youtube.com/channel/UC_b1bYSup-dHfwIoIXP0zPQ/featured'), nil, nil, SW_SHOW);
 end;
 
 procedure TForm2.btn1Click(Sender: TObject);

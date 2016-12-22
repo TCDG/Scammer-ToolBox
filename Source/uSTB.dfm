@@ -75,7 +75,7 @@ object frmmain: Tfrmmain
     Top = 575
     Width = 37
     Height = 19
-    Caption = '1.1.5'
+    Caption = '1.1.6'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
     Font.Height = -16
@@ -145,7 +145,7 @@ object frmmain: Tfrmmain
     Top = 16
     Width = 883
     Height = 545
-    ActivePage = ts1
+    ActivePage = ts5
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -156,7 +156,7 @@ object frmmain: Tfrmmain
     object ts1: TTabSheet
       Caption = 'Scammer Bingo'
       object lblscore: TLabel
-        Left = 437
+        Left = 396
         Top = 475
         Width = 15
         Height = 33
@@ -169,7 +169,7 @@ object frmmain: Tfrmmain
         ParentFont = False
       end
       object lbl3: TLabel
-        Left = 355
+        Left = 305
         Top = 475
         Width = 76
         Height = 33
@@ -182,7 +182,7 @@ object frmmain: Tfrmmain
         ParentFont = False
       end
       object lbl4: TLabel
-        Left = 472
+        Left = 431
         Top = 475
         Width = 48
         Height = 33
@@ -374,7 +374,7 @@ object frmmain: Tfrmmain
         TabOrder = 19
         OnClick = btn4Click
       end
-      object mmo1: TMemo
+      object mmonotepad: TMemo
         Left = 16
         Top = 336
         Width = 841
@@ -383,10 +383,23 @@ object frmmain: Tfrmmain
           'Notepad:')
         TabOrder = 20
       end
+      object btn15: TButton
+        Left = 741
+        Top = 465
+        Width = 131
+        Height = 43
+        Caption = 'Clear Notepad'
+        TabOrder = 21
+        OnClick = btn15Click
+      end
     end
     object ts2: TTabSheet
       Caption = 'Fake ID'
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object webfakeid: TWebBrowser
         Left = 0
         Top = 41
@@ -424,11 +437,24 @@ object frmmain: Tfrmmain
           TabOrder = 0
           OnClick = btn11Click
         end
+        object btn14: TButton
+          Left = 8
+          Top = 8
+          Width = 75
+          Height = 27
+          Caption = 'External'
+          TabOrder = 1
+          OnClick = btn14Click
+        end
       end
     end
     object ts3: TTabSheet
       Caption = 'Download and Install WMware'
       ImageIndex = 2
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object lbl5: TLabel
         Left = 23
         Top = 178
@@ -1471,6 +1497,10 @@ object frmmain: Tfrmmain
     object ts4: TTabSheet
       Caption = 'OS'#39's and Pre-Made VM'#39's'
       ImageIndex = 3
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object lbldfb: TLabel
         Left = 44
         Top = 71
@@ -1535,12 +1565,27 @@ object frmmain: Tfrmmain
     object ts5: TTabSheet
       Caption = 'Anti-Scammer Programms'
       ImageIndex = 4
+      object lbl9: TLabel
+        Left = 125
+        Top = 483
+        Width = 636
+        Height = 25
+        Caption = 
+          'Please note that I have not tested these programs! Use at own ri' +
+          'sk!'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -21
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+      end
       object grp1: TGroupBox
         Left = 11
         Top = 11
         Width = 313
         Height = 161
-        Caption = 'Anti-Scammer Toolset by Malcom Merlyn'
+        Caption = 'Anti-Scammer Toolset by Malcolm Merlyn'
         TabOrder = 0
         object btn6: TButton
           Left = 64
@@ -1575,7 +1620,7 @@ object frmmain: Tfrmmain
       end
       object btn10: TButton
         Left = 385
-        Top = 459
+        Top = 428
         Width = 105
         Height = 49
         Caption = 'Submit'
@@ -1610,6 +1655,8 @@ object frmmain: Tfrmmain
     Top = 575
     Width = 113
     Height = 43
+    HelpType = htKeyword
+    HelpKeyword = 'Shows changes in this version and previous versions.'
     Caption = 'Changelog'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -1649,7 +1696,7 @@ object frmmain: Tfrmmain
     Request.Ranges.Units = 'bytes'
     Request.Ranges = <>
     HTTPOptions = [hoForceEncodeParams]
-    Left = 852
-    Top = 8
+    Left = 876
+    Top = 72
   end
 end
