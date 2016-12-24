@@ -7,7 +7,8 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.jpeg, Vcl.ExtCtrls,
   Vcl.StdCtrls, uFakeID, uSB, uUpdater, IdBaseComponent, IdComponent, IdTCPConnection,
   IdTCPClient, IdHTTP, wininet, Vcl.ComCtrls, uAntiScammerPrograms, ShellAPI, uvm,
-  MetropolisUI.Tile, Vcl.OleCtrls, SHDocVw, Vcl.Imaging.pngimage, uChangelog, uYouTubers, uYTexternal;
+  MetropolisUI.Tile, Vcl.OleCtrls, SHDocVw, Vcl.Imaging.pngimage, uChangelog, uYouTubers, uYTexternal,
+  Vcl.Menus, uAbout;
 
 type
   Tfrmmain = class(TForm)
@@ -50,7 +51,6 @@ type
     btn1: TButton;
     btn2: TButton;
     img3: TImage;
-    btn3: TButton;
     lbl7: TLabel;
     btn4: TButton;
     btn5: TButton;
@@ -67,12 +67,31 @@ type
     btn11: TButton;
     btnMicrosoft: TButton;
     lbl8: TLabel;
-    btn12: TButton;
     mmonotepad: TMemo;
-    btn13: TButton;
     btn14: TButton;
     btn15: TButton;
     lbl9: TLabel;
+    mm1: TMainMenu;
+    File1: TMenuItem;
+    Close1: TMenuItem;
+    Options1: TMenuItem;
+    Changelog1: TMenuItem;
+    YouTubers1: TMenuItem;
+    ExternalLinks1: TMenuItem;
+    About1: TMenuItem;
+    GithubPage1: TMenuItem;
+    FakeID1: TMenuItem;
+    Scammerino1: TMenuItem;
+    DiscordServer1: TMenuItem;
+    ScammerSublounge1: TMenuItem;
+    AlexS1: TMenuItem;
+    Submits1: TMenuItem;
+    YouTubers2: TMenuItem;
+    AntiScammerPrograms1: TMenuItem;
+    PremadeVM1: TMenuItem;
+    DiscordServer2: TMenuItem;
+    btn3: TButton;
+    lblmsg: TLabel;
     procedure FormActivate(Sender: TObject);
     procedure btnupdateClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -98,7 +117,6 @@ type
     procedure btn1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
     procedure btn4Click(Sender: TObject);
-    procedure btn3Click(Sender: TObject);
     procedure btn5Click(Sender: TObject);
     procedure btn7Click(Sender: TObject);
     procedure btn8Click(Sender: TObject);
@@ -107,10 +125,22 @@ type
     procedure btn10Click(Sender: TObject);
     procedure btn11Click(Sender: TObject);
     procedure btnMicrosoftClick(Sender: TObject);
-    procedure btn12Click(Sender: TObject);
-    procedure btn13Click(Sender: TObject);
     procedure btn14Click(Sender: TObject);
     procedure btn15Click(Sender: TObject);
+    procedure Close1Click(Sender: TObject);
+    procedure Changelog1Click(Sender: TObject);
+    procedure YouTubers1Click(Sender: TObject);
+    procedure GithubPage1Click(Sender: TObject);
+    procedure About1Click(Sender: TObject);
+    procedure FakeID1Click(Sender: TObject);
+    procedure PremadeVM1Click(Sender: TObject);
+    procedure AntiScammerPrograms1Click(Sender: TObject);
+    procedure YouTubers2Click(Sender: TObject);
+    procedure ScammerSublounge1Click(Sender: TObject);
+    procedure AlexS1Click(Sender: TObject);
+    procedure Scammerino1Click(Sender: TObject);
+    procedure DiscordServer2Click(Sender: TObject);
+    procedure btn3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -303,6 +333,21 @@ begin
     ShowMessage('Woa Bingo!!! Congratz Baiter!');
 end;
 
+procedure Tfrmmain.About1Click(Sender: TObject);
+begin
+  frmabout.Show;
+end;
+
+procedure Tfrmmain.AlexS1Click(Sender: TObject);
+begin
+  ShellExecute(Application.Handle, PChar('open'), PChar('http://discord.me/AlexSDiscord'), nil, nil, SW_SHOW);
+end;
+
+procedure Tfrmmain.AntiScammerPrograms1Click(Sender: TObject);
+begin
+  ShellExecute(Application.Handle, PChar('open'), PChar('https://goo.gl/forms/KSRbE1GrmMOqzrcW2'), nil, nil, SW_SHOW);
+end;
+
 procedure Tfrmmain.btn10Click(Sender: TObject);
 begin
   ShellExecute(Application.Handle, PChar('open'), PChar('https://goo.gl/forms/KSRbE1GrmMOqzrcW2'), nil, nil, SW_SHOW);
@@ -318,16 +363,6 @@ begin
     begin
       ShowMessage('Error. No Internet access!');
     end;
-end;
-
-procedure Tfrmmain.btn12Click(Sender: TObject);
-begin
-  Form1.Show;
-end;
-
-procedure Tfrmmain.btn13Click(Sender: TObject);
-begin
-  Form2.Show;
 end;
 
 procedure Tfrmmain.btn14Click(Sender: TObject);
@@ -353,7 +388,7 @@ end;
 
 procedure Tfrmmain.btn3Click(Sender: TObject);
 begin
-  ShellExecute(Application.Handle, PChar('open'), PChar('https://github.com/TCDG/Scammer-ToolBox'), nil, nil, SW_SHOW);
+  frmchangelog.Show;
 end;
 
 procedure Tfrmmain.btn4Click(Sender: TObject);
@@ -433,9 +468,29 @@ begin
     ShowMessage('Woa Bingo!!! Congratz Baiter!');
 end;
 
+procedure Tfrmmain.Changelog1Click(Sender: TObject);
+begin
+  frmchangelog.Show;
+end;
+
+procedure Tfrmmain.Close1Click(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure Tfrmmain.DiscordServer2Click(Sender: TObject);
+begin
+  ShellExecute(Application.Handle, PChar('open'), PChar('https://goo.gl/forms/vyj45fCkts7aDuXX2'), nil, nil, SW_SHOW);
+end;
+
+procedure Tfrmmain.FakeID1Click(Sender: TObject);
+begin
+  frmytexternal.Show;
+end;
+
 procedure Tfrmmain.FormActivate(Sender: TObject);
 var
-  slatestversion, snews : string;
+  slatestversion, msg : string;
   origin : cardinal;
 begin
   pagecontrol.ActivePage := ts1;
@@ -447,12 +502,14 @@ begin
   if bconnected = True then
     Begin
       slatestversion := idhtp1.Get('http://154.127.60.211/version.html');
+      msg := idhtp1.Get('http://154.127.60.211/msg.html');
 
       lblversion.Caption := slatestversion;
+      lblmsg.Caption := msg;
 
       webfakeid.Navigate('http://www.fakenamegenerator.com/');
 
-      if slatestversion >= '1.1.7' then
+      if slatestversion >= '1.1.8' then
         begin
           ShowMessage('There is a new update avalible! Please click Update at the bottom right.');
           btnupdate.Enabled := True;
@@ -475,7 +532,38 @@ end;
 
 procedure Tfrmmain.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
+  pagecontrol.ActivePage := ts2;
   Release;
+end;
+
+procedure Tfrmmain.GithubPage1Click(Sender: TObject);
+begin
+  ShellExecute(Application.Handle, PChar('open'), PChar('https://github.com/TCDG/Scammer-ToolBox'), nil, nil, SW_SHOW);
+end;
+
+procedure Tfrmmain.PremadeVM1Click(Sender: TObject);
+begin
+  ShellExecute(Application.Handle, PChar('open'), PChar('https://goo.gl/forms/nMhbODor12pG9W9F3'), nil, nil, SW_SHOW);
+end;
+
+procedure Tfrmmain.Scammerino1Click(Sender: TObject);
+begin
+  ShellExecute(Application.Handle, PChar('open'), PChar('http://www.scammer.info/'), nil, nil, SW_SHOW);
+end;
+
+procedure Tfrmmain.ScammerSublounge1Click(Sender: TObject);
+begin
+  ShellExecute(Application.Handle, PChar('open'), PChar('https://discord.me/scammersublounge'), nil, nil, SW_SHOW);
+end;
+
+procedure Tfrmmain.YouTubers1Click(Sender: TObject);
+begin
+  frmyoutubers.Show;
+end;
+
+procedure Tfrmmain.YouTubers2Click(Sender: TObject);
+begin
+  ShellExecute(Application.Handle, PChar('open'), PChar('https://docs.google.com/forms/d/e/1FAIpQLSfOQ0JgnJfAoj-x7cYFs2LKIJv-k9eSzoa2kq6Ou5ZhTnr1DA/viewform?c=0&w=1&usp=send_form'), nil, nil, SW_SHOW);
 end;
 
 end.

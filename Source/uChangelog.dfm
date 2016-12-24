@@ -1,4 +1,4 @@
-object Form1: TForm1
+object frmchangelog: Tfrmchangelog
   Left = 0
   Top = 0
   BorderIcons = [biSystemMenu]
@@ -43,6 +43,15 @@ object Form1: TForm1
     Font.Style = []
     Lines.Strings = (
       'Changelog:'
+      ''
+      '(Version 1.1.7)'
+      '-----------------------------'
+      '- Added menu bar to replace '
+      '  some buttons and more.'
+      '- Fixed bug where it plays an error sound'
+      '  when closing without opening Fake ID'
+      '- Added a lot of stuff. Too much to '
+      '  remember'
       ''
       '(Version 1.1.6)'
       '-----------------------------'

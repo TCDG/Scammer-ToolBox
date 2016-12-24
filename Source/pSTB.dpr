@@ -5,19 +5,21 @@ uses
   uSTB in 'uSTB.pas' {frmmain},
   Vcl.Themes,
   Vcl.Styles,
-  uChangelog in 'uChangelog.pas' {Form1},
-  uYouTubers in 'uYouTubers.pas' {Form2},
-  uYTexternal in 'uYTexternal.pas' {frmytexternal};
+  uChangelog in 'uChangelog.pas' {frmchangelog},
+  uYouTubers in 'uYouTubers.pas' {frmyoutubers},
+  uYTexternal in 'uYTexternal.pas' {frmytexternal},
+  uAbout in 'uAbout.pas' {frmabout};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(Tfrmmain, frmmain);
-  Application.CreateForm(TForm1, Form1);
-  Application.CreateForm(TForm2, Form2);
-  Application.CreateForm(Tfrmytexternal, frmytexternal);
   TStyleManager.TrySetStyle('Ruby Graphite');
+  Application.CreateForm(Tfrmmain, frmmain);
+  Application.CreateForm(Tfrmchangelog, frmchangelog);
+  Application.CreateForm(Tfrmyoutubers, frmyoutubers);
+  Application.CreateForm(Tfrmytexternal, frmytexternal);
+  Application.CreateForm(Tfrmabout, frmabout);
   Application.Run;
 end.

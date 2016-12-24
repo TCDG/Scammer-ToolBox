@@ -1,0 +1,105 @@
+object frmabout: Tfrmabout
+  Left = 0
+  Top = 0
+  Caption = 'About Scammer Toolbox'
+  ClientHeight = 635
+  ClientWidth = 770
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lbl1: TLabel
+    Left = 8
+    Top = 8
+    Width = 119
+    Height = 45
+    Caption = 'License'
+    FocusControl = mmo1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -37
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object mmo1: TMemo
+    Left = 8
+    Top = 58
+    Width = 754
+    Height = 569
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Lines.Strings = (
+      'License'
+      ''
+      
+        'Everything in this repo is BSD style license unless otherwise sp' +
+        'ecified.'
+      ''
+      
+        'Copyright (c) 2016 The Collective Developer Group. All rights re' +
+        'served.'
+      ''
+      
+        'Redistribution and use in source and binary forms, with or witho' +
+        'ut modification, are permitted provided '
+      'that the following conditions are met:'
+      ''
+      
+        '*Redistributions of source code must retain the above copyright ' +
+        'notice, this list of conditions and the '
+      '  following disclaimer.'
+      
+        '*Redistributions in binary form must reproduce the above copyrig' +
+        'ht notice, this list of conditions and '
+      'the '
+      
+        '  following disclaimer in the documentation and/or other materia' +
+        'ls provided with the distribution.'
+      
+        '*Neither the name of The Collective Developer Group. nor the nam' +
+        'es of its contributors may be used to '
+      
+        '  endorse or promote products derived from this software without' +
+        ' specific prior written permission.'
+      ''
+      
+        'THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUT' +
+        'ORS "AS IS" AND '
+      
+        'ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO' +
+        ', THE IMPLIED '
+      
+        'WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPO' +
+        'SE ARE '
+      
+        'DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTOR' +
+        'S BE LIABLE FOR '
+      
+        'ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQU' +
+        'ENTIAL DAMAGES '
+      
+        '(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS ' +
+        'OR SERVICES; LOSS '
+      
+        'OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUS' +
+        'ED AND ON ANY '
+      
+        'THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR T' +
+        'ORT (INCLUDING '
+      
+        'NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF TH' +
+        'IS SOFTWARE, EVEN '
+      'IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.')
+    ParentFont = False
+    TabOrder = 0
+  end
+end

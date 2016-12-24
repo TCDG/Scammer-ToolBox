@@ -1,4 +1,4 @@
-object Form2: TForm2
+object frmyoutubers: Tfrmyoutubers
   Left = 0
   Top = 0
   BorderIcons = [biSystemMenu]
@@ -34,7 +34,7 @@ object Form2: TForm2
     Top = 0
     Width = 631
     Height = 555
-    ActivePage = ts2
+    ActivePage = ts1
     Align = alTop
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText

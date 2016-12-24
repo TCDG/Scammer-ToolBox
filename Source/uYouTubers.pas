@@ -8,7 +8,7 @@ uses
   Vcl.ExtCtrls, Vcl.ComCtrls, ShellAPI;
 
 type
-  TForm2 = class(TForm)
+  Tfrmyoutubers = class(TForm)
     pgc1: TPageControl;
     ts1: TTabSheet;
     btn1: TButton;
@@ -68,97 +68,97 @@ type
   end;
 
 var
-  Form2: TForm2;
+  frmyoutubers: Tfrmyoutubers;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm2.btn11Click(Sender: TObject);
+procedure Tfrmyoutubers.btn11Click(Sender: TObject);
 begin
   ShellExecute(Application.Handle, PChar('open'), PChar('http://discord.me/AlexSDiscord'), nil, nil, SW_SHOW);
 end;
 
-procedure TForm2.btn12Click(Sender: TObject);
+procedure Tfrmyoutubers.btn12Click(Sender: TObject);
 begin
   ShellExecute(Application.Handle, PChar('open'), PChar('https://www.youtube.com/channel/UCcTPklJvT-3u0e7K6HBKYvw'), nil, nil, SW_SHOW);
 end;
 
-procedure TForm2.btn15Click(Sender: TObject);
+procedure Tfrmyoutubers.btn15Click(Sender: TObject);
 begin
   pgc1.ActivePage := ts2;
 end;
 
-procedure TForm2.btn16Click(Sender: TObject);
+procedure Tfrmyoutubers.btn16Click(Sender: TObject);
 begin
   pgc1.ActivePage := ts1;
 end;
 
-procedure TForm2.btn17Click(Sender: TObject);
+procedure Tfrmyoutubers.btn17Click(Sender: TObject);
 begin
   //pgc1.ActivePage := ts3;
 end;
 
-procedure TForm2.btn18Click(Sender: TObject);
+procedure Tfrmyoutubers.btn18Click(Sender: TObject);
 begin
   ShellExecute(Application.Handle, PChar('open'), PChar('https://www.youtube.com/channel/UC_b1bYSup-dHfwIoIXP0zPQ/featured'), nil, nil, SW_SHOW);
 end;
 
-procedure TForm2.btn1Click(Sender: TObject);
+procedure Tfrmyoutubers.btn1Click(Sender: TObject);
 begin
   Close;
 end;
 
-procedure TForm2.btn2Click(Sender: TObject);
+procedure Tfrmyoutubers.btn2Click(Sender: TObject);
 begin
   ShellExecute(Application.Handle, PChar('open'), PChar('https://www.youtube.com/user/LewissTech'), nil, nil, SW_SHOW);
 end;
 
-procedure TForm2.btn4Click(Sender: TObject);
+procedure Tfrmyoutubers.btn4Click(Sender: TObject);
 begin
   ShellExecute(Application.Handle, PChar('open'), PChar('https://docs.google.com/forms/d/e/1FAIpQLSfOQ0JgnJfAoj-x7cYFs2LKIJv-k9eSzoa2kq6Ou5ZhTnr1DA/viewform?c=0&w=1&usp=send_form'), nil, nil, SW_SHOW);
 end;
 
-procedure TForm2.btn5Click(Sender: TObject);
+procedure Tfrmyoutubers.btn5Click(Sender: TObject);
 begin
   ShellExecute(Application.Handle, PChar('open'), PChar('https://discord.me/scammersublounge'), nil, nil, SW_SHOW);
 end;
 
-procedure TForm2.btn7Click(Sender: TObject);
+procedure Tfrmyoutubers.btn7Click(Sender: TObject);
 begin
   ShellExecute(Application.Handle, PChar('open'), PChar('https://www.scammer.info'), nil, nil, SW_SHOW);
 end;
 
-procedure TForm2.btn8Click(Sender: TObject);
+procedure Tfrmyoutubers.btn8Click(Sender: TObject);
 begin
   ShellExecute(Application.Handle, PChar('open'), PChar('http://discord.me/thunder'), nil, nil, SW_SHOW);
 end;
 
-procedure TForm2.btn9Click(Sender: TObject);
+procedure Tfrmyoutubers.btn9Click(Sender: TObject);
 begin
   ShellExecute(Application.Handle, PChar('open'), PChar('https://www.youtube.com/c/alexs24'), nil, nil, SW_SHOW);
 end;
 
-procedure TForm2.btnnextClick(Sender: TObject);
+procedure Tfrmyoutubers.btnnextClick(Sender: TObject);
 begin
   pgc1.ActivePageIndex := +1;
 
 
 end;
 
-procedure TForm2.btnprevClick(Sender: TObject);
+procedure Tfrmyoutubers.btnprevClick(Sender: TObject);
 begin
   pgc1.ActivePageIndex := +1;
 
 
 end;
 
-procedure TForm2.FormActivate(Sender: TObject);
+procedure Tfrmyoutubers.FormActivate(Sender: TObject);
 begin
   pgc1.ActivePageIndex := 0;
 end;
 
-procedure TForm2.btn6Click(Sender: TObject);
+procedure Tfrmyoutubers.btn6Click(Sender: TObject);
 begin
   ShellExecute(Application.Handle, PChar('open'), PChar('https://www.youtube.com/user/Themasterdefence'), nil, nil, SW_SHOW);
 end;

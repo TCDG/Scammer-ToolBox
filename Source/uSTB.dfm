@@ -4,12 +4,12 @@ object frmmain: Tfrmmain
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Scammer Toolbox'
-  ClientHeight = 626
+  ClientHeight = 610
   ClientWidth = 907
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -13
   Font.Name = 'Tahoma'
   Font.Style = []
   Icon.Data = {
@@ -49,17 +49,18 @@ object frmmain: Tfrmmain
     000000000000000000000000000000000000000000000000000000000000FFFF
     0000FFFF0000FFFF0000E0070000E0070000E1870000E3C70000F3CF0000F3CF
     0000081000000BD0000000000000C0030000FFFF0000FFFF0000FFFF0000}
+  Menu = mm1
   OldCreateOrder = False
   OnActivate = FormActivate
   OnClose = FormClose
   DesignSize = (
     907
-    626)
+    610)
   PixelsPerInch = 96
-  TextHeight = 13
+  TextHeight = 16
   object lbl1: TLabel
     Left = 8
-    Top = 599
+    Top = 583
     Width = 138
     Height = 19
     Caption = 'Made by Inforcer25'
@@ -72,10 +73,10 @@ object frmmain: Tfrmmain
   end
   object lblcurrentversion: TLabel
     Left = 757
-    Top = 575
+    Top = 560
     Width = 37
     Height = 19
-    Caption = '1.1.6'
+    Caption = '1.1.7'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
     Font.Height = -16
@@ -85,7 +86,7 @@ object frmmain: Tfrmmain
   end
   object lbl3123: TLabel
     Left = 634
-    Top = 575
+    Top = 560
     Width = 117
     Height = 19
     Caption = 'Current Version:'
@@ -98,7 +99,7 @@ object frmmain: Tfrmmain
   end
   object lbl2: TLabel
     Left = 634
-    Top = 600
+    Top = 585
     Width = 105
     Height = 19
     Caption = 'Latest Version:'
@@ -111,7 +112,7 @@ object frmmain: Tfrmmain
   end
   object lblversion: TLabel
     Left = 757
-    Top = 600
+    Top = 585
     Width = 5
     Height = 19
     Color = clRed
@@ -123,9 +124,21 @@ object frmmain: Tfrmmain
     ParentColor = False
     ParentFont = False
   end
+  object lblmsg: TLabel
+    Left = 197
+    Top = 577
+    Width = 40
+    Height = 25
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
   object btnupdate: TButton
     Left = 820
-    Top = 575
+    Top = 559
     Width = 71
     Height = 43
     Anchors = [akRight, akBottom]
@@ -142,10 +155,10 @@ object frmmain: Tfrmmain
   end
   object pagecontrol: TPageControl
     Left = 8
-    Top = 16
+    Top = 8
     Width = 883
     Height = 545
-    ActivePage = ts5
+    ActivePage = ts1
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -156,7 +169,7 @@ object frmmain: Tfrmmain
     object ts1: TTabSheet
       Caption = 'Scammer Bingo'
       object lblscore: TLabel
-        Left = 396
+        Left = 441
         Top = 475
         Width = 15
         Height = 33
@@ -169,7 +182,7 @@ object frmmain: Tfrmmain
         ParentFont = False
       end
       object lbl3: TLabel
-        Left = 305
+        Left = 350
         Top = 475
         Width = 76
         Height = 33
@@ -182,7 +195,7 @@ object frmmain: Tfrmmain
         ParentFont = False
       end
       object lbl4: TLabel
-        Left = 431
+        Left = 476
         Top = 475
         Width = 48
         Height = 33
@@ -381,6 +394,7 @@ object frmmain: Tfrmmain
         Height = 113
         Lines.Strings = (
           'Notepad:')
+        ScrollBars = ssVertical
         TabOrder = 20
       end
       object btn15: TButton
@@ -396,10 +410,6 @@ object frmmain: Tfrmmain
     object ts2: TTabSheet
       Caption = 'Fake ID'
       ImageIndex = 1
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object webfakeid: TWebBrowser
         Left = 0
         Top = 41
@@ -451,10 +461,6 @@ object frmmain: Tfrmmain
     object ts3: TTabSheet
       Caption = 'Download and Install WMware'
       ImageIndex = 2
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object lbl5: TLabel
         Left = 23
         Top = 178
@@ -1497,10 +1503,6 @@ object frmmain: Tfrmmain
     object ts4: TTabSheet
       Caption = 'OS'#39's and Pre-Made VM'#39's'
       ImageIndex = 3
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object lbldfb: TLabel
         Left = 44
         Top = 71
@@ -1630,57 +1632,19 @@ object frmmain: Tfrmmain
     end
   end
   object btn3: TButton
-    Left = 504
-    Top = 575
+    Left = 515
+    Top = 559
     Width = 113
     Height = 43
-    Hint = 
-      'Can be used to report issues, downloading the latest version or ' +
-      'to get the source.|Can be used to report issues, downloading the' +
-      ' latest version or to get the source.'
-    Caption = 'GitHub Page'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -19
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    ParentShowHint = False
-    ShowHint = True
-    TabOrder = 2
-    OnClick = btn3Click
-  end
-  object btn12: TButton
-    Left = 232
-    Top = 575
-    Width = 113
-    Height = 43
-    HelpType = htKeyword
-    HelpKeyword = 'Shows changes in this version and previous versions.'
     Caption = 'Changelog'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -19
+    Font.Height = -21
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 3
-    OnClick = btn12Click
-  end
-  object btn13: TButton
-    Left = 367
-    Top = 575
-    Width = 113
-    Height = 43
-    Caption = 'YouTubers'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -19
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 4
-    OnClick = btn13Click
+    TabOrder = 2
+    OnClick = btn3Click
   end
   object idhtp1: TIdHTTP
     AllowCookies = True
@@ -1696,7 +1660,80 @@ object frmmain: Tfrmmain
     Request.Ranges.Units = 'bytes'
     Request.Ranges = <>
     HTTPOptions = [hoForceEncodeParams]
-    Left = 876
-    Top = 72
+    Left = 4
+    Top = 552
+  end
+  object mm1: TMainMenu
+    BiDiMode = bdLeftToRight
+    ParentBiDiMode = False
+    Left = 56
+    Top = 552
+    object File1: TMenuItem
+      Caption = 'File'
+      object Close1: TMenuItem
+        Caption = 'Close'
+        OnClick = Close1Click
+      end
+    end
+    object Options1: TMenuItem
+      Caption = 'External Forms'
+      object Changelog1: TMenuItem
+        Caption = 'Changelog'
+        OnClick = Changelog1Click
+      end
+      object YouTubers1: TMenuItem
+        Caption = 'YouTubers'
+        OnClick = YouTubers1Click
+      end
+      object FakeID1: TMenuItem
+        Caption = 'Fake ID'
+        OnClick = FakeID1Click
+      end
+    end
+    object ExternalLinks1: TMenuItem
+      Caption = 'External Links'
+      object GithubPage1: TMenuItem
+        Caption = 'Github Page'
+        OnClick = GithubPage1Click
+      end
+      object Scammerino1: TMenuItem
+        Caption = 'Scammer.info'
+        OnClick = Scammerino1Click
+      end
+    end
+    object DiscordServer1: TMenuItem
+      Caption = 'Discord Servers'
+      object ScammerSublounge1: TMenuItem
+        Caption = 'SSL'
+        OnClick = ScammerSublounge1Click
+      end
+      object AlexS1: TMenuItem
+        Caption = 'AlexS'
+        OnClick = AlexS1Click
+      end
+    end
+    object Submits1: TMenuItem
+      Caption = 'Submits'
+      object YouTubers2: TMenuItem
+        Caption = 'YouTubers'
+        OnClick = YouTubers2Click
+      end
+      object AntiScammerPrograms1: TMenuItem
+        Caption = 'Anti-Scammer Programs'
+        OnClick = AntiScammerPrograms1Click
+      end
+      object PremadeVM1: TMenuItem
+        Caption = 'Pre-made VM'
+        OnClick = PremadeVM1Click
+      end
+      object DiscordServer2: TMenuItem
+        Caption = 'Discord Server'
+        OnClick = DiscordServer2Click
+      end
+    end
+    object About1: TMenuItem
+      Caption = 'About'
+      OnClick = About1Click
+    end
   end
 end

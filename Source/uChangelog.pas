@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ComCtrls;
 
 type
-  TForm1 = class(TForm)
+  Tfrmchangelog = class(TForm)
     btn1: TButton;
     redt1: TRichEdit;
     procedure btn1Click(Sender: TObject);
@@ -18,13 +18,13 @@ type
   end;
 
 var
-  Form1: TForm1;
+  frmchangelog: Tfrmchangelog;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm1.btn1Click(Sender: TObject);
+procedure Tfrmchangelog.btn1Click(Sender: TObject);
 begin
   Close;
 end;
