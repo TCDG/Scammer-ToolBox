@@ -51,6 +51,7 @@ object frmmain: Tfrmmain
     0000081000000BD0000000000000C0030000FFFF0000FFFF0000FFFF0000}
   Menu = mm1
   OldCreateOrder = False
+  Position = poDefault
   OnActivate = FormActivate
   OnClose = FormClose
   DesignSize = (
@@ -76,7 +77,7 @@ object frmmain: Tfrmmain
     Top = 560
     Width = 37
     Height = 19
-    Caption = '1.1.7'
+    Caption = '1.1.8'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
     Font.Height = -16
@@ -124,14 +125,15 @@ object frmmain: Tfrmmain
     ParentColor = False
     ParentFont = False
   end
-  object lblmsg: TLabel
-    Left = 197
-    Top = 577
-    Width = 40
-    Height = 25
+  object lbl10: TLabel
+    Left = 178
+    Top = 559
+    Width = 290
+    Height = 46
+    Caption = 'You can now change themes!'#13#10'(Options>Settings>Open Settings)'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -21
+    Font.Height = -19
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
@@ -1660,13 +1662,13 @@ object frmmain: Tfrmmain
     Request.Ranges.Units = 'bytes'
     Request.Ranges = <>
     HTTPOptions = [hoForceEncodeParams]
-    Left = 4
+    Left = 60
     Top = 552
   end
   object mm1: TMainMenu
     BiDiMode = bdLeftToRight
     ParentBiDiMode = False
-    Left = 56
+    Left = 96
     Top = 552
     object File1: TMenuItem
       Caption = 'File'
@@ -1675,60 +1677,70 @@ object frmmain: Tfrmmain
         OnClick = Close1Click
       end
     end
-    object Options1: TMenuItem
-      Caption = 'External Forms'
-      object Changelog1: TMenuItem
-        Caption = 'Changelog'
-        OnClick = Changelog1Click
+    object Options2: TMenuItem
+      Caption = 'Options'
+      object Options1: TMenuItem
+        Caption = 'External Forms'
+        object Changelog1: TMenuItem
+          Caption = 'Changelog'
+          OnClick = Changelog1Click
+        end
+        object YouTubers1: TMenuItem
+          Caption = 'YouTubers'
+          OnClick = YouTubers1Click
+        end
+        object FakeID1: TMenuItem
+          Caption = 'Fake ID'
+          OnClick = FakeID1Click
+        end
       end
-      object YouTubers1: TMenuItem
-        Caption = 'YouTubers'
-        OnClick = YouTubers1Click
+      object ExternalLinks1: TMenuItem
+        Caption = 'External Links'
+        object GithubPage1: TMenuItem
+          Caption = 'Github Page'
+          OnClick = GithubPage1Click
+        end
+        object Scammerino1: TMenuItem
+          Caption = 'Scammer.info'
+          OnClick = Scammerino1Click
+        end
       end
-      object FakeID1: TMenuItem
-        Caption = 'Fake ID'
-        OnClick = FakeID1Click
+      object DiscordServer1: TMenuItem
+        Caption = 'Discord Servers'
+        object ScammerSublounge1: TMenuItem
+          Caption = 'SSL'
+          OnClick = ScammerSublounge1Click
+        end
+        object AlexS1: TMenuItem
+          Caption = 'AlexS'
+          OnClick = AlexS1Click
+        end
       end
-    end
-    object ExternalLinks1: TMenuItem
-      Caption = 'External Links'
-      object GithubPage1: TMenuItem
-        Caption = 'Github Page'
-        OnClick = GithubPage1Click
+      object Submits1: TMenuItem
+        Caption = 'Submits'
+        object YouTubers2: TMenuItem
+          Caption = 'YouTubers'
+          OnClick = YouTubers2Click
+        end
+        object AntiScammerPrograms1: TMenuItem
+          Caption = 'Anti-Scammer Programs'
+          OnClick = AntiScammerPrograms1Click
+        end
+        object PremadeVM1: TMenuItem
+          Caption = 'Pre-made VM'
+          OnClick = PremadeVM1Click
+        end
+        object DiscordServer2: TMenuItem
+          Caption = 'Discord Server'
+          OnClick = DiscordServer2Click
+        end
       end
-      object Scammerino1: TMenuItem
-        Caption = 'Scammer.info'
-        OnClick = Scammerino1Click
-      end
-    end
-    object DiscordServer1: TMenuItem
-      Caption = 'Discord Servers'
-      object ScammerSublounge1: TMenuItem
-        Caption = 'SSL'
-        OnClick = ScammerSublounge1Click
-      end
-      object AlexS1: TMenuItem
-        Caption = 'AlexS'
-        OnClick = AlexS1Click
-      end
-    end
-    object Submits1: TMenuItem
-      Caption = 'Submits'
-      object YouTubers2: TMenuItem
-        Caption = 'YouTubers'
-        OnClick = YouTubers2Click
-      end
-      object AntiScammerPrograms1: TMenuItem
-        Caption = 'Anti-Scammer Programs'
-        OnClick = AntiScammerPrograms1Click
-      end
-      object PremadeVM1: TMenuItem
-        Caption = 'Pre-made VM'
-        OnClick = PremadeVM1Click
-      end
-      object DiscordServer2: TMenuItem
-        Caption = 'Discord Server'
-        OnClick = DiscordServer2Click
+      object StyleManager1: TMenuItem
+        Caption = 'Settings'
+        object hemeManager1: TMenuItem
+          Caption = 'Open Settings'
+          OnClick = hemeManager1Click
+        end
       end
     end
     object About1: TMenuItem

@@ -8,18 +8,22 @@ uses
   uChangelog in 'uChangelog.pas' {frmchangelog},
   uYouTubers in 'uYouTubers.pas' {frmyoutubers},
   uYTexternal in 'uYTexternal.pas' {frmytexternal},
-  uAbout in 'uAbout.pas' {frmabout};
+  uAbout in 'uAbout.pas' {frmabout},
+  udev in 'udev.pas' {frmdev},
+  uSettings in 'uSettings.pas' {frmsettings};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  TStyleManager.TrySetStyle('Ruby Graphite');
+  TStyleManager.TrySetStyle('Windows10 SlateGray');
   Application.CreateForm(Tfrmmain, frmmain);
   Application.CreateForm(Tfrmchangelog, frmchangelog);
   Application.CreateForm(Tfrmyoutubers, frmyoutubers);
   Application.CreateForm(Tfrmytexternal, frmytexternal);
   Application.CreateForm(Tfrmabout, frmabout);
+  Application.CreateForm(Tfrmdev, frmdev);
+  Application.CreateForm(Tfrmsettings, frmsettings);
   Application.Run;
 end.

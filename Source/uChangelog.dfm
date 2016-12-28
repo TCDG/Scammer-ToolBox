@@ -44,6 +44,11 @@ object frmchangelog: Tfrmchangelog
     Lines.Strings = (
       'Changelog:'
       ''
+      '(Version 1.1.8)'
+      '-----------------------------'
+      '- Added Theme settings'
+      '   (Options>Settings>Open Seetings)'
+      ''
       '(Version 1.1.7)'
       '-----------------------------'
       '- Added menu bar to replace '

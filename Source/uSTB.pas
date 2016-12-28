@@ -6,9 +6,8 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.jpeg, Vcl.ExtCtrls,
   Vcl.StdCtrls, uFakeID, uSB, uUpdater, IdBaseComponent, IdComponent, IdTCPConnection,
-  IdTCPClient, IdHTTP, wininet, Vcl.ComCtrls, uAntiScammerPrograms, ShellAPI, uvm,
-  MetropolisUI.Tile, Vcl.OleCtrls, SHDocVw, Vcl.Imaging.pngimage, uChangelog, uYouTubers, uYTexternal,
-  Vcl.Menus, uAbout;
+  IdTCPClient, IdHTTP, wininet, Vcl.ComCtrls, uAntiScammerPrograms, ShellAPI, uvm, Vcl.Themes, Vcl.OleCtrls, SHDocVw, Vcl.Imaging.pngimage, uChangelog, uYouTubers, uYTexternal,
+  Vcl.Menus, uAbout, uSettings, udev;
 
 type
   Tfrmmain = class(TForm)
@@ -91,7 +90,10 @@ type
     PremadeVM1: TMenuItem;
     DiscordServer2: TMenuItem;
     btn3: TButton;
-    lblmsg: TLabel;
+    StyleManager1: TMenuItem;
+    hemeManager1: TMenuItem;
+    Options2: TMenuItem;
+    lbl10: TLabel;
     procedure FormActivate(Sender: TObject);
     procedure btnupdateClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -141,6 +143,8 @@ type
     procedure Scammerino1Click(Sender: TObject);
     procedure DiscordServer2Click(Sender: TObject);
     procedure btn3Click(Sender: TObject);
+    procedure hemeManager1Click(Sender: TObject);
+    procedure Developers1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -478,6 +482,20 @@ begin
   Close;
 end;
 
+procedure Tfrmmain.Developers1Click(Sender: TObject);
+var
+  pass : String;
+begin
+  pass := InputBox('Development Mode','Please enter the password','');
+    
+  if pass = 'ScammerToolboxDev' then
+    frmdev.Show
+  else
+    begin
+      ShowMessage('Wrong password. Look in the code to get the password');
+    end;
+end;
+
 procedure Tfrmmain.DiscordServer2Click(Sender: TObject);
 begin
   ShellExecute(Application.Handle, PChar('open'), PChar('https://goo.gl/forms/vyj45fCkts7aDuXX2'), nil, nil, SW_SHOW);
@@ -490,8 +508,9 @@ end;
 
 procedure Tfrmmain.FormActivate(Sender: TObject);
 var
-  slatestversion, msg : string;
+  slatestversion {,msg} : string;
   origin : cardinal;
+  theme : Integer;
 begin
   pagecontrol.ActivePage := ts1;
 
@@ -502,14 +521,13 @@ begin
   if bconnected = True then
     Begin
       slatestversion := idhtp1.Get('http://154.127.60.211/version.html');
-      msg := idhtp1.Get('http://154.127.60.211/msg.html');
+      //msg := idhtp1.Get('http://154.127.60.211/msg.html');
 
       lblversion.Caption := slatestversion;
-      lblmsg.Caption := msg;
 
       webfakeid.Navigate('http://www.fakenamegenerator.com/');
 
-      if slatestversion >= '1.1.8' then
+      if slatestversion >= '1.1.9' then
         begin
           ShowMessage('There is a new update avalible! Please click Update at the bottom right.');
           btnupdate.Enabled := True;
@@ -528,6 +546,7 @@ begin
     End;
 
   btn4.SetFocus;
+
 end;
 
 procedure Tfrmmain.FormClose(Sender: TObject; var Action: TCloseAction);
@@ -539,6 +558,11 @@ end;
 procedure Tfrmmain.GithubPage1Click(Sender: TObject);
 begin
   ShellExecute(Application.Handle, PChar('open'), PChar('https://github.com/TCDG/Scammer-ToolBox'), nil, nil, SW_SHOW);
+end;
+
+procedure Tfrmmain.hemeManager1Click(Sender: TObject);
+begin
+  frmsettings.Show;
 end;
 
 procedure Tfrmmain.PremadeVM1Click(Sender: TObject);
