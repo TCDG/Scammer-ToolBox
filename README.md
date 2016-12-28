@@ -13,4 +13,4 @@ Direct Download: https://github.com/TCDG/Scammer-ToolBox/raw/master/Scammer%20To
 ##Preview 
 Please note that the picture might not be updated to the current version!
 
-![STB](http://i.imgur.com/dZYh6Xl.png "menu")
+![STB](http://i.imgur.com/R36WRpa.png "menu")
