@@ -5,7 +5,7 @@ Direct Download: https://github.com/TCDG/Scammer-ToolBox/raw/master/Scammer%20To
 
 ##Whats new?
 * Theme Settings
-	You can now change the theme byt going to (Options>Settings>Open Settings)
+	You can now change the theme by going to (Options>Settings>Open Settings)
 
 ##Whats Broken?
 * Theme does not save after closing Scammer Toolbox
