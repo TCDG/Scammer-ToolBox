@@ -1,7 +1,7 @@
 <h1>Scammer ToolBox</h1>
 Scammer ToolBox Provides alot of features and more are added after every update!
 
-<a href="https://github.com/TCDG/Scammer-ToolBox/raw/master/Scammer%20Toolbox%20v1.1.8.exe">Direct Download</a>
+<a href="https://github.com/TCDG/Scammer-ToolBox/raw/master/Scammer%20Toolbox%20v1.1.8.exe">Direct Download v1.1.8</a>
 
 <h2>Whats new?</h2>
 * Theme Settings
