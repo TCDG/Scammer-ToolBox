@@ -15,7 +15,7 @@ type
     btn2: TButton;
     procedure btn2Click(Sender: TObject);
     procedure btn1Click(Sender: TObject);
-    procedure FormActivate(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -39,7 +39,7 @@ begin
   Close;
 end;
 
-procedure Tfrmytexternal.FormActivate(Sender: TObject);
+procedure Tfrmytexternal.FormCreate(Sender: TObject);
 begin
   wb1.Navigate('http://www.fakenamegenerator.com/');
 end;

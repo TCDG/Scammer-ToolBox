@@ -4,7 +4,7 @@ object frmmain: Tfrmmain
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Scammer Toolbox'
-  ClientHeight = 610
+  ClientHeight = 653
   ClientWidth = 907
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -54,14 +54,16 @@ object frmmain: Tfrmmain
   Position = poDefault
   OnActivate = FormActivate
   OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
   DesignSize = (
     907
-    610)
+    653)
   PixelsPerInch = 96
   TextHeight = 16
   object lbl1: TLabel
     Left = 8
-    Top = 583
+    Top = 631
     Width = 138
     Height = 19
     Caption = 'Made by Inforcer25'
@@ -74,10 +76,10 @@ object frmmain: Tfrmmain
   end
   object lblcurrentversion: TLabel
     Left = 757
-    Top = 560
+    Top = 608
     Width = 37
     Height = 19
-    Caption = '1.1.8'
+    Caption = '1.1.9'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
     Font.Height = -16
@@ -87,7 +89,7 @@ object frmmain: Tfrmmain
   end
   object lbl3123: TLabel
     Left = 634
-    Top = 560
+    Top = 608
     Width = 117
     Height = 19
     Caption = 'Current Version:'
@@ -100,7 +102,7 @@ object frmmain: Tfrmmain
   end
   object lbl2: TLabel
     Left = 634
-    Top = 585
+    Top = 633
     Width = 105
     Height = 19
     Caption = 'Latest Version:'
@@ -113,7 +115,7 @@ object frmmain: Tfrmmain
   end
   object lblversion: TLabel
     Left = 757
-    Top = 585
+    Top = 633
     Width = 5
     Height = 19
     Color = clRed
@@ -125,22 +127,9 @@ object frmmain: Tfrmmain
     ParentColor = False
     ParentFont = False
   end
-  object lbl10: TLabel
-    Left = 178
-    Top = 559
-    Width = 290
-    Height = 46
-    Caption = 'You can now change themes!'#13#10'(Options>Settings>Open Settings)'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -19
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
   object btnupdate: TButton
-    Left = 820
-    Top = 559
+    Left = 828
+    Top = 608
     Width = 71
     Height = 43
     Anchors = [akRight, akBottom]
@@ -159,7 +148,7 @@ object frmmain: Tfrmmain
     Left = 8
     Top = 8
     Width = 883
-    Height = 545
+    Height = 591
     ActivePage = ts1
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -172,7 +161,7 @@ object frmmain: Tfrmmain
       Caption = 'Scammer Bingo'
       object lblscore: TLabel
         Left = 441
-        Top = 475
+        Top = 521
         Width = 15
         Height = 33
         Caption = '0'
@@ -185,7 +174,7 @@ object frmmain: Tfrmmain
       end
       object lbl3: TLabel
         Left = 350
-        Top = 475
+        Top = 521
         Width = 76
         Height = 33
         Caption = 'Score:'
@@ -198,7 +187,7 @@ object frmmain: Tfrmmain
       end
       object lbl4: TLabel
         Left = 476
-        Top = 475
+        Top = 521
         Width = 48
         Height = 33
         Caption = '/ 19'
@@ -382,31 +371,50 @@ object frmmain: Tfrmmain
       end
       object btn4: TButton
         Left = 3
-        Top = 465
+        Top = 511
         Width = 89
         Height = 43
         Caption = 'Reset'
         TabOrder = 19
         OnClick = btn4Click
       end
-      object mmonotepad: TMemo
+      object mmolog: TMemo
         Left = 16
         Top = 336
-        Width = 841
-        Height = 113
+        Width = 440
+        Height = 169
         Lines.Strings = (
-          'Notepad:')
+          'Log:'
+          '')
+        ReadOnly = True
         ScrollBars = ssVertical
         TabOrder = 20
       end
-      object btn15: TButton
-        Left = 741
-        Top = 465
-        Width = 131
+      object btn16: TButton
+        Left = 719
+        Top = 511
+        Width = 153
         Height = 43
-        Caption = 'Clear Notepad'
+        Caption = 'Notepad'
         TabOrder = 21
-        OnClick = btn15Click
+        OnClick = btn16Click
+      end
+      object btn13: TButton
+        Left = 107
+        Top = 511
+        Width = 89
+        Height = 43
+        Caption = 'Clear Log'
+        TabOrder = 22
+        OnClick = btn13Click
+      end
+      object cal1: TCalendar
+        Left = 476
+        Top = 336
+        Width = 381
+        Height = 169
+        StartOfWeek = 0
+        TabOrder = 23
       end
     end
     object ts2: TTabSheet
@@ -416,7 +424,7 @@ object frmmain: Tfrmmain
         Left = 0
         Top = 41
         Width = 875
-        Height = 470
+        Height = 516
         Align = alClient
         TabOrder = 0
         ExplicitLeft = 448
@@ -424,7 +432,7 @@ object frmmain: Tfrmmain
         ExplicitWidth = 300
         ExplicitHeight = 150
         ControlData = {
-          4C0000006F5A0000933000000000000000000000000000000000000000000000
+          4C0000006F5A0000553500000000000000000000000000000000000000000000
           000000004C000000000000000000000001000000E0D057007335CF11AE690800
           2B2E12620A000000000000004C0000000114020000000000C000000000000046
           8000000000000000000000000000000000000000000000000000000000000000
@@ -464,8 +472,8 @@ object frmmain: Tfrmmain
       Caption = 'Download and Install WMware'
       ImageIndex = 2
       object lbl5: TLabel
-        Left = 23
-        Top = 178
+        Left = 15
+        Top = 218
         Width = 698
         Height = 200
         Caption = 
@@ -483,8 +491,8 @@ object frmmain: Tfrmmain
         ParentFont = False
       end
       object img3: TImage
-        Left = 23
-        Top = 32
+        Left = 15
+        Top = 48
         Width = 394
         Height = 89
         Picture.Data = {
@@ -1448,25 +1456,23 @@ object frmmain: Tfrmmain
         Stretch = True
       end
       object lbl7: TLabel
-        Left = 447
-        Top = 56
-        Width = 407
-        Height = 50
-        Caption = 
-          'Had to remove the keys.'#13#10'Just google "VMware worlstation 12 seri' +
-          'als"'
+        Left = 438
+        Top = 91
+        Width = 59
+        Height = 25
+        Caption = 'Serial:'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clWindowText
         Font.Height = -21
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
       end
       object btn1: TButton
-        Left = 3
-        Top = 419
+        Left = 15
+        Top = 467
         Width = 342
-        Height = 89
+        Height = 78
         Caption = 'Download VMware Windows (x64)'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -1478,10 +1484,10 @@ object frmmain: Tfrmmain
         OnClick = btn1Click
       end
       object btn2: TButton
-        Left = 530
-        Top = 419
+        Left = 519
+        Top = 467
         Width = 342
-        Height = 89
+        Height = 78
         Caption = 'Download VMware Linux (x64)'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -1493,13 +1499,30 @@ object frmmain: Tfrmmain
         OnClick = btn2Click
       end
       object btn9: TButton
-        Left = 520
-        Top = 169
+        Left = 519
+        Top = 209
         Width = 137
         Height = 49
         Caption = 'Video Tutorial'
         TabOrder = 2
         OnClick = btn9Click
+      end
+      object redt1: TRichEdit
+        Left = 503
+        Top = 93
+        Width = 275
+        Height = 25
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Lines.Strings = (
+          '5A02H-AU243-TZJ49-GTC7K-3C61N')
+        ParentFont = False
+        ReadOnly = True
+        TabOrder = 3
+        Zoom = 100
       end
     end
     object ts4: TTabSheet
@@ -1520,7 +1543,7 @@ object frmmain: Tfrmmain
       end
       object lbl6: TLabel
         Left = 180
-        Top = 483
+        Top = 529
         Width = 526
         Height = 25
         Caption = 'Please note that these vm'#39's have not been tested by me'
@@ -1538,6 +1561,13 @@ object frmmain: Tfrmmain
         Height = 19
         Caption = 'By Microsoft (Optional)'
       end
+      object lbl11: TLabel
+        Left = 3
+        Top = 516
+        Width = 112
+        Height = 38
+        Caption = 'VB: Visual Basic'#13#10'VM: vmWare'
+      end
       object btn5: TButton
         Left = 13
         Top = 16
@@ -1549,7 +1579,7 @@ object frmmain: Tfrmmain
       end
       object btn7: TButton
         Left = 389
-        Top = 436
+        Top = 482
         Width = 97
         Height = 41
         Caption = 'Submit'
@@ -1567,11 +1597,11 @@ object frmmain: Tfrmmain
       end
     end
     object ts5: TTabSheet
-      Caption = 'Anti-Scammer Programms'
+      Caption = 'Anti-Scammer Programs'
       ImageIndex = 4
       object lbl9: TLabel
         Left = 125
-        Top = 483
+        Top = 529
         Width = 636
         Height = 25
         Caption = 
@@ -1624,7 +1654,7 @@ object frmmain: Tfrmmain
       end
       object btn10: TButton
         Left = 385
-        Top = 428
+        Top = 474
         Width = 105
         Height = 49
         Caption = 'Submit'
@@ -1634,8 +1664,8 @@ object frmmain: Tfrmmain
     end
   end
   object btn3: TButton
-    Left = 515
-    Top = 559
+    Left = 428
+    Top = 607
     Width = 113
     Height = 43
     Caption = 'Changelog'
@@ -1647,6 +1677,21 @@ object frmmain: Tfrmmain
     ParentFont = False
     TabOrder = 2
     OnClick = btn3Click
+  end
+  object btn12: TButton
+    Left = 216
+    Top = 607
+    Width = 133
+    Height = 43
+    Caption = 'GitHub Page'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+    OnClick = btn12Click
   end
   object idhtp1: TIdHTTP
     AllowCookies = True
@@ -1663,13 +1708,13 @@ object frmmain: Tfrmmain
     Request.Ranges = <>
     HTTPOptions = [hoForceEncodeParams]
     Left = 60
-    Top = 552
+    Top = 600
   end
   object mm1: TMainMenu
     BiDiMode = bdLeftToRight
     ParentBiDiMode = False
     Left = 96
-    Top = 552
+    Top = 600
     object File1: TMenuItem
       Caption = 'File'
       object Close1: TMenuItem
@@ -1679,43 +1724,6 @@ object frmmain: Tfrmmain
     end
     object Options2: TMenuItem
       Caption = 'Options'
-      object Options1: TMenuItem
-        Caption = 'External Forms'
-        object Changelog1: TMenuItem
-          Caption = 'Changelog'
-          OnClick = Changelog1Click
-        end
-        object YouTubers1: TMenuItem
-          Caption = 'YouTubers'
-          OnClick = YouTubers1Click
-        end
-        object FakeID1: TMenuItem
-          Caption = 'Fake ID'
-          OnClick = FakeID1Click
-        end
-      end
-      object ExternalLinks1: TMenuItem
-        Caption = 'External Links'
-        object GithubPage1: TMenuItem
-          Caption = 'Github Page'
-          OnClick = GithubPage1Click
-        end
-        object Scammerino1: TMenuItem
-          Caption = 'Scammer.info'
-          OnClick = Scammerino1Click
-        end
-      end
-      object DiscordServer1: TMenuItem
-        Caption = 'Discord Servers'
-        object ScammerSublounge1: TMenuItem
-          Caption = 'SSL'
-          OnClick = ScammerSublounge1Click
-        end
-        object AlexS1: TMenuItem
-          Caption = 'AlexS'
-          OnClick = AlexS1Click
-        end
-      end
       object Submits1: TMenuItem
         Caption = 'Submits'
         object YouTubers2: TMenuItem
@@ -1741,6 +1749,47 @@ object frmmain: Tfrmmain
           Caption = 'Open Settings'
           OnClick = hemeManager1Click
         end
+      end
+    end
+    object Options1: TMenuItem
+      Caption = 'External Forms'
+      object Changelog1: TMenuItem
+        Caption = 'Changelog'
+        OnClick = Changelog1Click
+      end
+      object YouTubers1: TMenuItem
+        Caption = 'YouTubers'
+        OnClick = YouTubers1Click
+      end
+      object FakeID1: TMenuItem
+        Caption = 'Fake ID'
+        OnClick = FakeID1Click
+      end
+      object estingForm1: TMenuItem
+        Caption = 'Testing Form'
+        OnClick = estingForm1Click
+      end
+    end
+    object DiscordServer1: TMenuItem
+      Caption = 'Discord Servers'
+      object ScammerSublounge1: TMenuItem
+        Caption = 'SSL'
+        OnClick = ScammerSublounge1Click
+      end
+      object AlexS1: TMenuItem
+        Caption = 'AlexS'
+        OnClick = AlexS1Click
+      end
+    end
+    object ExternalLinks1: TMenuItem
+      Caption = 'External Links'
+      object GithubPage1: TMenuItem
+        Caption = 'Github Page'
+        OnClick = GithubPage1Click
+      end
+      object Scammerino1: TMenuItem
+        Caption = 'Scammer.info'
+        OnClick = Scammerino1Click
       end
     end
     object About1: TMenuItem

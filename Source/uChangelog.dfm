@@ -4,7 +4,7 @@ object frmchangelog: Tfrmchangelog
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Changelog:'
-  ClientHeight = 491
+  ClientHeight = 490
   ClientWidth = 406
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -43,6 +43,19 @@ object frmchangelog: Tfrmchangelog
     Font.Style = []
     Lines.Strings = (
       'Changelog:'
+      ''
+      '(Version 1.1.9)'
+      '-----------------------------'
+      '- Added a new theme'
+      '- Added confirm on exit'
+      '- Fixed FakeID where it keeps refreshing'
+      '- Changed the way you change themes'
+      '- Fixed theme saving'
+      '- Added a external notepad'
+      '- Added a logger (Doesn'#39't log everything)'
+      '- Added Calender'
+      '- Changed the way it gets the update '
+      '  information'
       ''
       '(Version 1.1.8)'
       '-----------------------------'

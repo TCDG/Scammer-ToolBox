@@ -10,45 +10,47 @@ type
   Tfrmsettings = class(TForm)
     rg1: TRadioGroup;
     btn2: TButton;
-    rb1: TRadioButton;
-    rb2: TRadioButton;
-    rb3: TRadioButton;
+    cbbthemelist: TComboBox;
+    btn1: TButton;
     procedure btn2Click(Sender: TObject);
-    procedure rb1Click(Sender: TObject);
-    procedure rb2Click(Sender: TObject);
-    procedure rb3Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure btn1Click(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
-    theme : string;
   end;
 
 var
   frmsettings: Tfrmsettings;
+  txttheme : TextFile;
+  stylename : string;
 
 implementation
 
 {$R *.dfm}
 
+procedure Tfrmsettings.btn1Click(Sender: TObject);
+begin
+  if cbbthemelist.Text = '--Choose a theme--' then
+    ShowMessage('Please choose a theme')
+  else
+    TStyleManager.SetStyle(cbbthemelist.Text);
+
+  AssignFile(txttheme,'C:\Users\Public\Documents\theme.txt');
+  Rewrite(txttheme);
+  Writeln(txttheme, cbbthemelist.Text);
+  CloseFile(txttheme);
+end;
+
 procedure Tfrmsettings.btn2Click(Sender: TObject);
 begin
   Close;
 end;
-
-procedure Tfrmsettings.rb1Click(Sender: TObject);
+procedure Tfrmsettings.FormCreate(Sender: TObject);
 begin
-  TStyleManager.SetStyle('Ruby Graphite');
-end;
-
-procedure Tfrmsettings.rb2Click(Sender: TObject);
-begin
-  TStyleManager.SetStyle('Aqua Graphite');
-end;
-
-procedure Tfrmsettings.rb3Click(Sender: TObject);
-begin
-  TStyleManager.SetStyle('Windows10 Dark');
+  for stylename in TStylemanager.StyleNames do
+    cbbthemelist.Items.Add(stylename);
 end;
 
 end.

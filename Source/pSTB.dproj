@@ -40,7 +40,7 @@
         <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base)'!=''">
-        <Custom_Styles>&quot;Aqua Graphite|VCLSTYLE|$(BDSCOMMONDIR)\Styles\AquaGraphite.vsf&quot;;&quot;Ruby Graphite|VCLSTYLE|$(BDSCOMMONDIR)\Styles\RubyGraphite.vsf&quot;;&quot;Windows10 Dark|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Windows10Dark.vsf&quot;;&quot;Windows10 SlateGray|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Windows10SlateGray.vsf&quot;</Custom_Styles>
+        <Custom_Styles>&quot;Aqua Graphite|VCLSTYLE|$(BDSCOMMONDIR)\Styles\AquaGraphite.vsf&quot;;&quot;Ruby Graphite|VCLSTYLE|$(BDSCOMMONDIR)\Styles\RubyGraphite.vsf&quot;;TabletDark|VCLSTYLE|$(BDSCOMMONDIR)\Styles\TabletDark.vsf;&quot;Windows10 Dark|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Windows10Dark.vsf&quot;;&quot;Windows10 SlateGray|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Windows10SlateGray.vsf&quot;</Custom_Styles>
         <VCL_Custom_Styles>&quot;Aqua Graphite|VCLSTYLE|$(PUBLIC)\Documents\Embarcadero\Studio\15.0\Styles\AquaGraphite.vsf&quot;;&quot;Ruby Graphite|VCLSTYLE|$(PUBLIC)\Documents\Embarcadero\Studio\15.0\Styles\RubyGraphite.vsf&quot;</VCL_Custom_Styles>
         <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
@@ -122,6 +122,10 @@
         </DCCReference>
         <DCCReference Include="uSettings.pas">
             <Form>frmsettings</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="uNotepad.pas">
+            <Form>frmnotepad</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

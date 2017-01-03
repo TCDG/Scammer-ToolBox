@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.jpeg, Vcl.ExtCtrls,
   Vcl.StdCtrls, uFakeID, uSB, uUpdater, IdBaseComponent, IdComponent, IdTCPConnection,
   IdTCPClient, IdHTTP, wininet, Vcl.ComCtrls, uAntiScammerPrograms, ShellAPI, uvm, Vcl.Themes, Vcl.OleCtrls, SHDocVw, Vcl.Imaging.pngimage, uChangelog, uYouTubers, uYTexternal,
-  Vcl.Menus, uAbout, uSettings, udev;
+  Vcl.Menus, uAbout, uSettings, udev, uNotepad, Vcl.Grids, Vcl.Samples.Calendar;
 
 type
   Tfrmmain = class(TForm)
@@ -50,7 +50,6 @@ type
     btn1: TButton;
     btn2: TButton;
     img3: TImage;
-    lbl7: TLabel;
     btn4: TButton;
     btn5: TButton;
     lbldfb: TLabel;
@@ -66,9 +65,8 @@ type
     btn11: TButton;
     btnMicrosoft: TButton;
     lbl8: TLabel;
-    mmonotepad: TMemo;
+    mmolog: TMemo;
     btn14: TButton;
-    btn15: TButton;
     lbl9: TLabel;
     mm1: TMainMenu;
     File1: TMenuItem;
@@ -93,7 +91,14 @@ type
     StyleManager1: TMenuItem;
     hemeManager1: TMenuItem;
     Options2: TMenuItem;
-    lbl10: TLabel;
+    redt1: TRichEdit;
+    lbl7: TLabel;
+    lbl11: TLabel;
+    btn12: TButton;
+    estingForm1: TMenuItem;
+    btn16: TButton;
+    btn13: TButton;
+    cal1: TCalendar;
     procedure FormActivate(Sender: TObject);
     procedure btnupdateClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -128,7 +133,6 @@ type
     procedure btn11Click(Sender: TObject);
     procedure btnMicrosoftClick(Sender: TObject);
     procedure btn14Click(Sender: TObject);
-    procedure btn15Click(Sender: TObject);
     procedure Close1Click(Sender: TObject);
     procedure Changelog1Click(Sender: TObject);
     procedure YouTubers1Click(Sender: TObject);
@@ -144,7 +148,12 @@ type
     procedure DiscordServer2Click(Sender: TObject);
     procedure btn3Click(Sender: TObject);
     procedure hemeManager1Click(Sender: TObject);
-    procedure Developers1Click(Sender: TObject);
+    procedure btn12Click(Sender: TObject);
+    procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+    procedure FormCreate(Sender: TObject);
+    procedure estingForm1Click(Sender: TObject);
+    procedure btn16Click(Sender: TObject);
+    procedure btn13Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -369,15 +378,27 @@ begin
     end;
 end;
 
+procedure Tfrmmain.btn12Click(Sender: TObject);
+begin
+  ShellExecute(Application.Handle, PChar('open'), PChar('https://tcdg.github.io/Scammer-ToolBox/'), nil, nil, SW_SHOW);
+end;
+
+procedure Tfrmmain.btn13Click(Sender: TObject);
+begin
+  mmolog.Clear;
+  mmolog.Lines.Add('Log:');
+  mmolog.Lines.Add('');
+end;
+
 procedure Tfrmmain.btn14Click(Sender: TObject);
 begin
   frmytexternal.Show;
 end;
 
-procedure Tfrmmain.btn15Click(Sender: TObject);
+procedure Tfrmmain.btn16Click(Sender: TObject);
 begin
-  mmonotepad.Clear;
-  mmonotepad.Lines.Add('Notepad:');
+  mmolog.Lines.Add('Opened Notepad!');
+  frmnotepad.Show;
 end;
 
 procedure Tfrmmain.btn1Click(Sender: TObject);
@@ -392,6 +413,7 @@ end;
 
 procedure Tfrmmain.btn3Click(Sender: TObject);
 begin
+  mmolog.Lines.Add('Opened Changelog');
   frmchangelog.Show;
 end;
 
@@ -419,6 +441,8 @@ begin
 
   score := 0;
   lblscore.Caption := IntToStr(score);
+
+  mmolog.Lines.Add('Reset done!');
 end;
 
 procedure Tfrmmain.btn5Click(Sender: TObject);
@@ -459,7 +483,7 @@ end;
 
 procedure Tfrmmain.btnupdateClick(Sender: TObject);
 begin
-  ShellExecute(Application.Handle, PChar('open'), PChar('https://github.com/TCDG/Scammer-ToolBox'), nil, nil, SW_SHOW);
+  ShellExecute(Application.Handle, PChar('open'), PChar('https://tcdg.github.io/Scammer-ToolBox/'), nil, nil, SW_SHOW);
 end;
 
 procedure Tfrmmain.btnwirusesfoundClick(Sender: TObject);
@@ -482,23 +506,14 @@ begin
   Close;
 end;
 
-procedure Tfrmmain.Developers1Click(Sender: TObject);
-var
-  pass : String;
-begin
-  pass := InputBox('Development Mode','Please enter the password','');
-    
-  if pass = 'ScammerToolboxDev' then
-    frmdev.Show
-  else
-    begin
-      ShowMessage('Wrong password. Look in the code to get the password');
-    end;
-end;
-
 procedure Tfrmmain.DiscordServer2Click(Sender: TObject);
 begin
   ShellExecute(Application.Handle, PChar('open'), PChar('https://goo.gl/forms/vyj45fCkts7aDuXX2'), nil, nil, SW_SHOW);
+end;
+
+procedure Tfrmmain.estingForm1Click(Sender: TObject);
+begin
+  frmdev.Show;
 end;
 
 procedure Tfrmmain.FakeID1Click(Sender: TObject);
@@ -507,12 +522,12 @@ begin
 end;
 
 procedure Tfrmmain.FormActivate(Sender: TObject);
-var
-  slatestversion {,msg} : string;
+{var
+  slatestversion : string;
   origin : cardinal;
-  theme : Integer;
+  theme : Integer; }
 begin
-  pagecontrol.ActivePage := ts1;
+ { pagecontrol.ActivePage := ts1;
 
   Application.Title := 'Scammer ToolBox';
 
@@ -521,15 +536,14 @@ begin
   if bconnected = True then
     Begin
       slatestversion := idhtp1.Get('http://154.127.60.211/version.html');
-      //msg := idhtp1.Get('http://154.127.60.211/msg.html');
 
       lblversion.Caption := slatestversion;
 
-      webfakeid.Navigate('http://www.fakenamegenerator.com/');
+      //webfakeid.Navigate('http://www.fakenamegenerator.com/');
 
-      if slatestversion >= '1.1.9' then
+      if slatestversion >= '1.2.1' then
         begin
-          ShowMessage('There is a new update avalible! Please click Update at the bottom right.');
+          ShowMessage('There is a new update available! Please click Update at the bottom right.');
           btnupdate.Enabled := True;
         end;
 
@@ -545,7 +559,7 @@ begin
       pnl1.Caption := 'FakeID needs internet access to work!';
     End;
 
-  btn4.SetFocus;
+  btn4.SetFocus;     }
 
 end;
 
@@ -553,6 +567,80 @@ procedure Tfrmmain.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   pagecontrol.ActivePage := ts2;
   Release;
+end;
+
+procedure Tfrmmain.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+begin
+  if MessageDlg('Are you sure you want to exit?', mtConfirmation, [mbYes, mbNo], 0) = mrYes then
+    CanClose:= True
+  else
+    CanClose:= False;
+end;
+
+procedure Tfrmmain.FormCreate(Sender: TObject);
+var
+  slatestversion, updatenum : string;
+  origin : cardinal;
+  theme : Integer;
+begin
+  if FileExists('C:\Users\Public\Documents\theme.txt') then
+    begin
+      AssignFile(txttheme, 'C:\Users\Public\Documents\theme.txt');
+      Reset(txttheme);
+      Readln(txttheme, stylename);
+      CloseFile(txttheme);
+
+      TStyleManager.SetStyle(stylename);
+    end;
+
+  pagecontrol.ActivePage := ts1;
+
+  Application.Title := 'Scammer ToolBox';
+
+  bconnected := InternetGetConnectedState(@origin,0);
+
+  mmolog.Lines.Add('Checking Internet Connection...');
+
+  if bconnected = True then
+    Begin
+
+      mmolog.Lines.Add('Connected to the Internet!');
+
+      slatestversion := idhtp1.Get('http://154.127.60.211/version.html');
+
+      updatenum := idhtp1.Get('http://154.127.60.211/update.html');
+
+      lblversion.Caption := slatestversion;
+
+      webfakeid.Navigate('http://www.fakenamegenerator.com/');
+
+      mmolog.Lines.Add('Checking for update...');
+
+      if updatenum >= '2' then
+        begin
+          mmolog.Lines.Add('Update found!');
+          ShowMessage('There is a new update available! Please click Update at the bottom right.');
+          btnupdate.Enabled := True;
+        end
+      else
+        begin
+          mmolog.Lines.Add('No Update Found!');
+        end;
+
+    End
+  else
+    Begin
+      mmolog.Lines.Add('No Internet Connection!');
+
+      lblversion.Caption := 'Offline';
+
+      lblversion.Font.Color := clRed;;
+
+      ShowMessage('You are currently offline. FakeID needs Internet to work!');
+
+      pnl1.Caption := 'FakeID needs internet access to work!';
+    End;
+
 end;
 
 procedure Tfrmmain.GithubPage1Click(Sender: TObject);
