@@ -21,11 +21,15 @@ object frmytexternal: Tfrmytexternal
     Height = 62
     Align = alBottom
     TabOrder = 0
+    DesignSize = (
+      852
+      62)
     object btn1: TButton
       Left = 365
       Top = 6
       Width = 121
       Height = 51
+      Anchors = [akLeft, akTop, akRight, akBottom]
       Caption = 'Reload'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText

@@ -4,7 +4,7 @@ object frmmain: Tfrmmain
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Scammer Toolbox'
-  ClientHeight = 653
+  ClientHeight = 656
   ClientWidth = 907
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -52,18 +52,14 @@ object frmmain: Tfrmmain
   Menu = mm1
   OldCreateOrder = False
   Position = poDefault
-  OnActivate = FormActivate
   OnClose = FormClose
   OnCloseQuery = FormCloseQuery
   OnCreate = FormCreate
-  DesignSize = (
-    907
-    653)
   PixelsPerInch = 96
   TextHeight = 16
   object lbl1: TLabel
     Left = 8
-    Top = 631
+    Top = 630
     Width = 138
     Height = 19
     Caption = 'Made by Inforcer25'
@@ -73,76 +69,6 @@ object frmmain: Tfrmmain
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-  end
-  object lblcurrentversion: TLabel
-    Left = 757
-    Top = 608
-    Width = 37
-    Height = 19
-    Caption = '1.1.9'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clBlack
-    Font.Height = -16
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object lbl3123: TLabel
-    Left = 634
-    Top = 608
-    Width = 117
-    Height = 19
-    Caption = 'Current Version:'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clBlack
-    Font.Height = -16
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object lbl2: TLabel
-    Left = 634
-    Top = 633
-    Width = 105
-    Height = 19
-    Caption = 'Latest Version:'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clBlack
-    Font.Height = -16
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object lblversion: TLabel
-    Left = 757
-    Top = 633
-    Width = 5
-    Height = 19
-    Color = clRed
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clLime
-    Font.Height = -16
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentColor = False
-    ParentFont = False
-  end
-  object btnupdate: TButton
-    Left = 828
-    Top = 608
-    Width = 71
-    Height = 43
-    Anchors = [akRight, akBottom]
-    Caption = 'Update'
-    Enabled = False
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -19
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 0
-    OnClick = btnupdateClick
   end
   object pagecontrol: TPageControl
     Left = 8
@@ -156,7 +82,7 @@ object frmmain: Tfrmmain
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 1
+    TabOrder = 0
     object ts1: TTabSheet
       Caption = 'Scammer Bingo'
       object lblscore: TLabel
@@ -378,43 +304,46 @@ object frmmain: Tfrmmain
         TabOrder = 19
         OnClick = btn4Click
       end
-      object mmolog: TMemo
-        Left = 16
-        Top = 336
-        Width = 440
-        Height = 169
-        Lines.Strings = (
-          'Log:'
-          '')
-        ReadOnly = True
-        ScrollBars = ssVertical
-        TabOrder = 20
-      end
       object btn16: TButton
-        Left = 719
-        Top = 511
-        Width = 153
-        Height = 43
-        Caption = 'Notepad'
-        TabOrder = 21
-        OnClick = btn16Click
-      end
-      object btn13: TButton
-        Left = 107
+        Left = 783
         Top = 511
         Width = 89
         Height = 43
-        Caption = 'Clear Log'
-        TabOrder = 22
-        OnClick = btn13Click
+        Caption = 'Notepad'
+        TabOrder = 20
+        OnClick = btn16Click
       end
-      object cal1: TCalendar
-        Left = 476
+      object grp2: TGroupBox
+        Left = 16
         Top = 336
-        Width = 381
-        Height = 169
-        StartOfWeek = 0
-        TabOrder = 23
+        Width = 841
+        Height = 161
+        Caption = 'Please read'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -21
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 21
+        object lbl2: TLabel
+          Left = 69
+          Top = 48
+          Width = 702
+          Height = 81
+          Caption = 
+            'Thank you to eveyone who has used and stayed with Scammer Toolbo' +
+            'x. This was a great project to make. unfortunately I don'#39't have ' +
+            'time nor the ideas to keep this project alive. This is the final' +
+            ' update for Scammer Toolbox'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+          WordWrap = True
+        end
       end
     end
     object ts2: TTabSheet
@@ -1583,6 +1512,7 @@ object frmmain: Tfrmmain
         Width = 97
         Height = 41
         Caption = 'Submit'
+        Enabled = False
         TabOrder = 1
         OnClick = btn7Click
       end
@@ -1658,16 +1588,17 @@ object frmmain: Tfrmmain
         Width = 105
         Height = 49
         Caption = 'Submit'
+        Enabled = False
         TabOrder = 1
         OnClick = btn10Click
       end
     end
   end
   object btn3: TButton
-    Left = 428
-    Top = 607
+    Left = 774
+    Top = 605
     Width = 113
-    Height = 43
+    Height = 44
     Caption = 'Changelog'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -1675,14 +1606,14 @@ object frmmain: Tfrmmain
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 2
+    TabOrder = 1
     OnClick = btn3Click
   end
   object btn12: TButton
-    Left = 216
-    Top = 607
+    Left = 618
+    Top = 605
     Width = 133
-    Height = 43
+    Height = 44
     Caption = 'GitHub Page'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -1690,30 +1621,43 @@ object frmmain: Tfrmmain
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 3
+    TabOrder = 2
     OnClick = btn12Click
   end
-  object idhtp1: TIdHTTP
-    AllowCookies = True
-    ProxyParams.BasicAuthentication = False
-    ProxyParams.ProxyPort = 0
-    Request.ContentLength = -1
-    Request.ContentRangeEnd = -1
-    Request.ContentRangeStart = -1
-    Request.ContentRangeInstanceLength = -1
-    Request.Accept = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
-    Request.BasicAuthentication = False
-    Request.UserAgent = 'Mozilla/3.0 (compatible; Indy Library)'
-    Request.Ranges.Units = 'bytes'
-    Request.Ranges = <>
-    HTTPOptions = [hoForceEncodeParams]
-    Left = 60
-    Top = 600
+  object btn13: TButton
+    Left = 466
+    Top = 605
+    Width = 133
+    Height = 44
+    Caption = 'Youtubers'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+    OnClick = btn13Click
+  end
+  object btn15: TButton
+    Left = 314
+    Top = 605
+    Width = 133
+    Height = 44
+    Caption = 'Fake ID'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+    OnClick = btn15Click
   end
   object mm1: TMainMenu
     BiDiMode = bdLeftToRight
     ParentBiDiMode = False
-    Left = 96
+    Left = 88
     Top = 600
     object File1: TMenuItem
       Caption = 'File'
@@ -1743,12 +1687,9 @@ object frmmain: Tfrmmain
           OnClick = DiscordServer2Click
         end
       end
-      object StyleManager1: TMenuItem
-        Caption = 'Settings'
-        object hemeManager1: TMenuItem
-          Caption = 'Open Settings'
-          OnClick = hemeManager1Click
-        end
+      object hemeManager1: TMenuItem
+        Caption = 'Theme Manager'
+        OnClick = hemeManager1Click
       end
     end
     object Options1: TMenuItem

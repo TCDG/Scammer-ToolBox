@@ -9,7 +9,6 @@ uses
   uYouTubers in 'uYouTubers.pas' {frmyoutubers},
   uYTexternal in 'uYTexternal.pas' {frmytexternal},
   uAbout in 'uAbout.pas' {frmabout},
-  udev in 'udev.pas' {frmdev},
   uSettings in 'uSettings.pas' {frmsettings},
   uNotepad in 'uNotepad.pas' {frmnotepad};
 
@@ -24,7 +23,6 @@ begin
   Application.CreateForm(Tfrmyoutubers, frmyoutubers);
   Application.CreateForm(Tfrmytexternal, frmytexternal);
   Application.CreateForm(Tfrmabout, frmabout);
-  Application.CreateForm(Tfrmdev, frmdev);
   Application.CreateForm(Tfrmsettings, frmsettings);
   Application.CreateForm(Tfrmnotepad, frmnotepad);
   Application.Run;

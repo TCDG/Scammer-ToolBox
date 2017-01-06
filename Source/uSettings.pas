@@ -51,6 +51,8 @@ procedure Tfrmsettings.FormCreate(Sender: TObject);
 begin
   for stylename in TStylemanager.StyleNames do
     cbbthemelist.Items.Add(stylename);
+
+  cbbthemelist.ItemIndex := cbbthemelist.Items.IndexOf(TStyleManager.ActiveStyle.Name);
 end;
 
 end.

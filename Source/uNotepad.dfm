@@ -87,5 +87,22 @@ object frmnotepad: Tfrmnotepad
       TabOrder = 2
       OnClick = btn3Click
     end
+    object se1: TSpinEdit
+      Left = 272
+      Top = 8
+      Width = 49
+      Height = 35
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      MaxValue = 0
+      MinValue = 0
+      ParentFont = False
+      TabOrder = 3
+      Value = 16
+      OnChange = se1Change
+    end
   end
 end

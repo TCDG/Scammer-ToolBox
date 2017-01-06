@@ -12,12 +12,6 @@ uses
 type
   Tfrmmain = class(TForm)
     lbl1: TLabel;
-    lblcurrentversion: TLabel;
-    idhtp1: TIdHTTP;
-    lbl3123: TLabel;
-    lbl2: TLabel;
-    lblversion: TLabel;
-    btnupdate: TButton;
     pagecontrol: TPageControl;
     ts1: TTabSheet;
     ts2: TTabSheet;
@@ -65,7 +59,6 @@ type
     btn11: TButton;
     btnMicrosoft: TButton;
     lbl8: TLabel;
-    mmolog: TMemo;
     btn14: TButton;
     lbl9: TLabel;
     mm1: TMainMenu;
@@ -88,7 +81,6 @@ type
     PremadeVM1: TMenuItem;
     DiscordServer2: TMenuItem;
     btn3: TButton;
-    StyleManager1: TMenuItem;
     hemeManager1: TMenuItem;
     Options2: TMenuItem;
     redt1: TRichEdit;
@@ -97,9 +89,10 @@ type
     btn12: TButton;
     estingForm1: TMenuItem;
     btn16: TButton;
+    grp2: TGroupBox;
+    lbl2: TLabel;
     btn13: TButton;
-    cal1: TCalendar;
-    procedure FormActivate(Sender: TObject);
+    btn15: TButton;
     procedure btnupdateClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure btncmdClick(Sender: TObject);
@@ -154,6 +147,7 @@ type
     procedure estingForm1Click(Sender: TObject);
     procedure btn16Click(Sender: TObject);
     procedure btn13Click(Sender: TObject);
+    procedure btn15Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -385,9 +379,7 @@ end;
 
 procedure Tfrmmain.btn13Click(Sender: TObject);
 begin
-  mmolog.Clear;
-  mmolog.Lines.Add('Log:');
-  mmolog.Lines.Add('');
+  frmyoutubers.Show;
 end;
 
 procedure Tfrmmain.btn14Click(Sender: TObject);
@@ -395,9 +387,13 @@ begin
   frmytexternal.Show;
 end;
 
+procedure Tfrmmain.btn15Click(Sender: TObject);
+begin
+  frmytexternal.Show;
+end;
+
 procedure Tfrmmain.btn16Click(Sender: TObject);
 begin
-  mmolog.Lines.Add('Opened Notepad!');
   frmnotepad.Show;
 end;
 
@@ -413,7 +409,6 @@ end;
 
 procedure Tfrmmain.btn3Click(Sender: TObject);
 begin
-  mmolog.Lines.Add('Opened Changelog');
   frmchangelog.Show;
 end;
 
@@ -441,8 +436,6 @@ begin
 
   score := 0;
   lblscore.Caption := IntToStr(score);
-
-  mmolog.Lines.Add('Reset done!');
 end;
 
 procedure Tfrmmain.btn5Click(Sender: TObject);
@@ -521,48 +514,6 @@ begin
   frmytexternal.Show;
 end;
 
-procedure Tfrmmain.FormActivate(Sender: TObject);
-{var
-  slatestversion : string;
-  origin : cardinal;
-  theme : Integer; }
-begin
- { pagecontrol.ActivePage := ts1;
-
-  Application.Title := 'Scammer ToolBox';
-
-  bconnected := InternetGetConnectedState(@origin,0);
-
-  if bconnected = True then
-    Begin
-      slatestversion := idhtp1.Get('http://154.127.60.211/version.html');
-
-      lblversion.Caption := slatestversion;
-
-      //webfakeid.Navigate('http://www.fakenamegenerator.com/');
-
-      if slatestversion >= '1.2.1' then
-        begin
-          ShowMessage('There is a new update available! Please click Update at the bottom right.');
-          btnupdate.Enabled := True;
-        end;
-
-    End
-  else
-    Begin
-      lblversion.Caption := 'Offline';
-
-      lblversion.Font.Color := clRed;;
-
-      ShowMessage('You are currently offline. FakeID needs Internet to work!');
-
-      pnl1.Caption := 'FakeID needs internet access to work!';
-    End;
-
-  btn4.SetFocus;     }
-
-end;
-
 procedure Tfrmmain.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   pagecontrol.ActivePage := ts2;
@@ -579,7 +530,6 @@ end;
 
 procedure Tfrmmain.FormCreate(Sender: TObject);
 var
-  slatestversion, updatenum : string;
   origin : cardinal;
   theme : Integer;
 begin
@@ -599,47 +549,16 @@ begin
 
   bconnected := InternetGetConnectedState(@origin,0);
 
-  mmolog.Lines.Add('Checking Internet Connection...');
-
   if bconnected = True then
     Begin
-
-      mmolog.Lines.Add('Connected to the Internet!');
-
-      slatestversion := idhtp1.Get('http://154.127.60.211/version.html');
-
-      updatenum := idhtp1.Get('http://154.127.60.211/update.html');
-
-      lblversion.Caption := slatestversion;
-
       webfakeid.Navigate('http://www.fakenamegenerator.com/');
-
-      mmolog.Lines.Add('Checking for update...');
-
-      if updatenum >= '2' then
-        begin
-          mmolog.Lines.Add('Update found!');
-          ShowMessage('There is a new update available! Please click Update at the bottom right.');
-          btnupdate.Enabled := True;
-        end
-      else
-        begin
-          mmolog.Lines.Add('No Update Found!');
-        end;
-
     End
   else
-    Begin
-      mmolog.Lines.Add('No Internet Connection!');
-
-      lblversion.Caption := 'Offline';
-
-      lblversion.Font.Color := clRed;;
-
+    begin
       ShowMessage('You are currently offline. FakeID needs Internet to work!');
 
       pnl1.Caption := 'FakeID needs internet access to work!';
-    End;
+    end;
 
 end;
 
