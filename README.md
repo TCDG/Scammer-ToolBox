@@ -1,7 +1,7 @@
 <h1>Scammer ToolBox</h1>
 Scammer ToolBox Provides alot of features and more are added after every update!
 
-<a href="https://github.com/TCDG/Scammer-ToolBox/raw/master/Scammer%20Toolbox%20v1.2.0.exe">
+<a href="https://github.com/TCDG/Scammer-ToolBox/raw/master/Scammer%20Toolbox%20%20v1.2.0.exe">
   <img src="http://i.imgur.com/qoGP19r.png" alt="Scammer Toolbox">
 </a>
 
