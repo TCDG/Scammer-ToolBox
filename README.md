@@ -14,4 +14,4 @@ Scammer ToolBox Provides alot of features and more are added after every update!
 
 <h2>Preview</h2> 
 
-![STB](http://i.imgur.com/EML6v0q.png "Scammer Toolbox Preview")
+![STB](http://i.imgur.com/RAmsrD4.png "Scammer Toolbox Preview")
