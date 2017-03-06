@@ -3,6 +3,8 @@ Scammer ToolBox Provides alot of features and more are added after every update!
 
 Note: This also works on linux with wine but there are some issues. Other than that it is usable.
 
+Older versions may crash on start if there is a internet connection. This is due to it not being able to connect to the update server (Update server offline)
+
 <a href="https://github.com/TCDG/Scammer-ToolBox/raw/master/Scammer%20Toolbox%20%20v1.2.0.exe">
   <img src="http://i.imgur.com/qoGP19r.png" alt="Scammer Toolbox">
 </a>
